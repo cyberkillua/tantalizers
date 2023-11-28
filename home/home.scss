@@ -1,0 +1,202 @@
+@import "../scss/main";
+
+
+.hero {
+    width: 100vw;
+    // height: 100vh;
+    background-image: url("../images/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: torem(250);
+    padding-bottom: torem(48);
+
+    .header {
+        font-weight: 700;
+        width: torem(680);
+        text-align: center;
+    }
+
+    .hero-content {
+        width: torem(488);
+        height: torem(276);
+        margin-top: torem(68);
+        padding: torem(40) torem(24);
+        border-radius: torem(16);
+        border: 1px solid rgba(255, 255, 255, 0.90);
+        background: rgba(255, 255, 255, 0.30);
+
+        .bar {
+            display: flex;
+            align-items: center;
+            border-radius: torem(100);
+            height: torem(64);
+            padding: 0.9rem 1.6rem;
+            justify-content: space-between;
+            background: #E2E2E2;
+
+            .restaurant {
+                border-radius: torem(56);
+                background: #FFF;
+            }
+
+            .restaurant,
+            .Tantis-Pot {
+                display: flex;
+                width: torem(204);
+                padding: torem(8) 1.6rem;
+                justify-content: center;
+                align-items: center;
+                gap: .8rem;
+            }
+        }
+
+        &-bottom {
+            display: flex;
+            flex-direction: column;
+
+            .select,
+            .hero-option {
+                margin-top: torem(20);
+                display: flex;
+                width: torem(440);
+                height: 5rem;
+                // display: flex;
+                // align-items: center;
+                font-family: inherit;
+                padding: 1rem;
+                color: #8D8D8D;
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 2.4rem;
+                gap: torem(4);
+
+                .hero-option {
+                    color: #8D8D8D;
+                    font-size: 1.8rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 2.4rem;
+                }
+            }
+        }
+    }
+}
+
+.info {
+    padding: 9.6rem;
+
+    &-top {
+        &-header {
+            margin-bottom: 4rem;
+        }
+
+        .carousel {
+            margin-bottom: 9.6rem;
+            .card {
+                margin-right: 3.7rem;
+             
+                .carousel-image {
+                    width: 22rem;
+                    height: 18rem;
+                    border-radius: 1.6rem;
+                    margin-bottom: torem(16);
+                }
+
+                .card-bottom {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .8rem;
+                    width: 22rem;
+
+                    .food-name {
+                        text-align: center;
+                        width: 100%;
+                        height: 4rem;
+                    }
+
+                    .price {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .swiper-pagination {
+                // position: relative;
+                border: 1px solid red;
+                position: fixed;
+                // bottom: 0;
+                width: 100%;
+                display: block;
+                height: 5rem;
+            }
+
+        }
+    }
+
+    &-bottom {
+        &-header {
+            margin-bottom: 4rem;
+        }
+
+        &-content {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .instructions {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3.2rem;
+
+                &-icon {
+                    width: 15rem;
+                    height: 15rem;
+                }
+
+                p {
+                    width: 22rem;
+                    text-align: center;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+.ad {
+    background-image: url("../images/Background2.png");
+    width: 100vw;
+    padding: 22rem 0 17rem 9.6rem;
+    background-size: cover;
+    &-content {
+        width: fit-content;
+        color: white;
+
+        &-header {
+            margin-bottom: 1.6rem;
+        }
+
+        &-p {
+            margin-bottom: 5rem;
+        }
+
+        .ad-btn-container {
+            display: flex;
+            gap: 1.3rem;
+
+            .ad-btn {
+                background-color: #FFF;
+                padding: 1.2rem 3.2rem;
+                border-radius: 8px;
+                border: 1px solid #E2E2E2;
+               
+            }
+        }
+    }
+}

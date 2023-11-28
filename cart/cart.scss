@@ -1,0 +1,393 @@
+@import "../scss/main";
+
+.mycart{
+    .mycart-body {
+        padding-top: 8.5rem;
+    
+        .mycart-header {
+            display: flex;
+            height: 16.2rem;
+            flex-direction: column;
+            justify-content: center;
+            background: #300;
+            gap: 5rem;
+            color: white;
+            padding: 3.2rem 0;
+            align-items: center;
+    
+            .top {
+                display: flex;
+                padding: .8rem 1.6rem;
+                align-items: center;
+                justify-content: center;
+                width: 26.8rem;
+                gap: .8rem;
+                border-radius: .8rem;
+                border: 1px solid #E9E9E9;
+                background: #FFF;
+    
+                h3 {
+                    color: #202020;
+                    font-size: 1.8rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 2.4rem;
+                    /* 133.333% */
+                }
+            }
+    
+            .bottom {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+    
+                .step {
+                    display: flex;
+                    padding: .8rem 2.4rem;
+                    align-items: center;
+                    border-radius: 4.8rem;
+                    border: 1px solid #E2E2E2;
+                    background: #FFF;
+    
+                    p {
+                        color: #202020;
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 1.4rem;
+                    }
+                }
+    
+                .arrow-icon {
+                    width: 8rem;
+                }
+    
+                .active {
+                    border: 1px solid #A00;
+                    background: #A00;
+    
+                    p {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    
+        .content-container {
+            width: 100%;
+            padding: 8rem 9.6rem;
+            display: flex;
+            flex-direction: column;
+    
+            .table-wrapper {
+                padding: 0 5.4rem;
+    
+                .mycart-item {
+                    border-collapse: collapse;
+    
+                    width: 100%;
+    
+                    thead {
+    
+                        tr {
+    
+                            th {
+                                p {
+                                    text-align: center;
+                                    color: #202020;
+                                    font-family: 'Fredoka', sans-serif;
+                                    font-size: 2.4rem;
+                                    font-style: normal;
+                                    margin-bottom: 1.6rem;
+                                    font-weight: 600;
+                                    line-height: 2.8rem;
+                                }
+                            }
+                        }
+                    }
+    
+                    tbody {
+                        tr {
+                            td {
+                                padding-bottom: 3rem;
+    
+                                .product {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 2.4rem;
+    
+                                    .product-img {
+                                        width: 14.1rem;
+                                        height: 10rem;
+                                        border-radius: 1.6rem;
+                                    }
+    
+                                    .product-content {
+                                        p {
+                                            width: 28.2rem;
+                                            color: #202020;
+                                            font-size: 2.2rem;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            margin-bottom: 1.6rem;
+                                            line-height: 3.0rem;
+                                        }
+    
+                                        .price {
+                                            color: #202020;
+                                            font-size: 1.8rem;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: 2.4rem;
+                                        }
+                                    }
+                                }
+    
+                                .quantity {
+                                    display: flex;
+                                    width: 10.9rem;
+                                    padding: 1.3rem .8rem;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border-radius: .4rem;
+                                    border: 1px solid #E2E2E2;
+    
+                                    .increase,
+                                    .decrease {
+                                        display: flex;
+                                        align-items: center;
+                                        width: 2.4rem;
+                                        height: 2.4rem;
+                                        flex-shrink: 0;
+                                    }
+    
+                                    span {
+                                        color: #202020;
+                                        font-size: 2.2rem;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: 3rem;
+                                        /* 136.364% */
+                                    }
+    
+                                }
+    
+                                .total {
+                                    width: fit-content;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 4.6rem;
+    
+                                    .amount {
+                                        color: #202020;
+                                        font-size: 2.2rem;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 3rem;
+                                    }
+    
+                                    .close-icon {
+                                        width: 2.4rem;
+                                        height: 2.4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .total {
+                width: 38rem;
+                align-self: flex-end;
+    
+                .top {
+                    margin-bottom: .8rem;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    p {
+                        color: #202020;
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 2.0rem;
+                    }
+    
+                    .amount {
+                        color: #202020;
+                        text-align: right;
+                        font-family: Satoshi;
+                        font-size: 1.8rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 2.4rem;
+                    }
+    
+                }
+    
+                .vat {
+                    color: #202020;
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    font-weight: 500;
+                    line-height: 1.6rem;
+                }
+            }
+    
+            .checkout {
+                align-self: flex-end;
+                padding: 1.2rem 3.2rem;
+                align-items: center;
+                border-radius: .8rem;
+                border: 1px solid #F00;
+                background: #F00;
+                margin-top: 3.9rem;
+    
+                p {
+                    color: #FFF;
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1.6rem;
+    
+                }
+            }
+    
+            .tantalize-section {
+                margin-top: 6.4rem;
+    
+                .section-header {
+                    color: #202020;
+                    font-family: 'Fredoka', sans-serif;
+                    font-size: 4.8rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    margin-bottom: 4rem;
+                    line-height: 5.4rem;
+                    /* 112.5% */
+                }
+    
+                .order-section-grid {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(32.4rem, 1fr));
+                    row-gap: 4rem;
+    
+                    .grid-item {
+                        width: fit-content;
+                        border: 1px solid #E2E2E2;
+                        border-radius: .8rem .8rem 0px 0px;
+    
+                        &-image {
+                            width: 32.4rem;
+                            height: 23.0rem;
+                            border-radius: .8rem .8rem 0px 0px;
+                        }
+    
+                        &-bottom {
+                            padding: 1.2rem;
+    
+                            p {
+                                width: 30rem;
+                                height: 6rem;
+                                overflow: hidden;
+                                color: #202020;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                font-size: 2.2rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 3.0rem;
+                                /* 136.364% */
+                            }
+    
+                            .price {
+                                color: rgba(32, 32, 32, 0.70);
+                                font-size: 1.8rem;
+                                font-style: normal;
+                                height: fit-content;
+                                margin: 1.2rem 0;
+                                font-weight: 500;
+                                line-height: 2.4rem;
+                                /* 133.333% */
+                            }
+    
+                            .last {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+    
+                                .quantity {
+                                    display: flex;
+                                    width: 10.9rem;
+                                    padding: 1.3rem .8rem;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border-radius: .4rem;
+                                    border: 1px solid #E2E2E2;
+    
+                                    .increase,
+                                    .decrease {
+                                        display: flex;
+                                        align-items: center;
+                                        width: 2.4rem;
+                                        height: 2.4rem;
+                                        flex-shrink: 0;
+                                    }
+    
+                                    span {
+                                        color: #202020;
+                                        font-size: 2.2rem;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: 3rem;
+                                        /* 136.364% */
+                                    }
+    
+                                    .add-to-card {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-self: center;
+                                        width: 2.4rem;
+                                        height: 2.4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .see-more-btn {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 4rem;
+    
+                    .see-more {
+                        display: flex;
+                        width: 26.1rem;
+                        padding: 1.2rem 1.6rem;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 1.2rem;
+                        border-radius: .8rem;
+                        border: 1px solid #FFE6E6;
+                        background: #FFE6E6;
+    
+                        p {
+                            color: #300;
+                            font-size: 1.6rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+    }
+}

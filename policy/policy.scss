@@ -1,0 +1,57 @@
+@import "../scss/main";
+
+.policy-hero {
+    width: 100%;
+    margin-top: 8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 44rem;
+    background-image: url("../images/background4.png");
+}
+
+
+.policy-content {
+    padding: 8rem 38rem 8rem 9.2rem;
+
+    .header {
+        color: #202020;
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 600;
+        margin-top: 3.2rem;
+        margin-bottom: 1.6rem;
+        line-height: 3.6rem;
+    }
+
+    p {
+        color:  rgba(32, 32, 32, 0.70);
+        text-align: justify;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 1.6rem;
+        line-height: 2.4rem;
+    }
+    .item-p{
+        margin-bottom: 0;
+    }
+    .header:nth-of-type(7){
+        margin-bottom: 1.6rem;
+    }
+    ul{
+        list-style: disc;
+        margin-left: 2.5rem;
+        li{
+            color:  rgba(32, 32, 32, 0.70);
+            text-align: justify;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 2.4rem;
+        }
+    }
+
+    .header:first-child{
+        margin-top: 0;
+    }
+}

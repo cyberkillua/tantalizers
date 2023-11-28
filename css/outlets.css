@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&amp;display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 0.6944vw;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  font-family: "Satoshi", sans-serif;
+}
+
+p {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h1 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 9.6rem;
+  font-weight: 400;
+  line-height: toRen(116);
+  letter-spacing: 0em;
+}
+
+h2 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: toRem(60);
+  letter-spacing: 0em;
+}
+
+h4 {
+  color: #202020;
+  font-family: "Fredoka", sans-serif;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.6rem;
+}
+
+.subtitle--1 {
+  font-family: inherit;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  letter-spacing: 0em;
+}
+
+.paragraph--1 {
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: toRem(20);
+  letter-spacing: 0em;
+}
+
+.paragraph--2 {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  letter-spacing: 0em;
+}
+
+.paragraph--3 {
+  color: rgba(32, 32, 32, 0.7);
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+  /* 133.333% */
+}
+
+.subtitle--2 {
+  font-family: inherit;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  letter-spacing: 0em;
+}
+
+.paragraph--5 {
+  color: #202020;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.subtitle--3 {
+  color: #202020;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 30;
+  background-color: white;
+  top: 0;
+  left: 0;
+  padding: 1.6rem 6.5rem;
+  width: 100vw;
+  justify-content: space-between;
+}
+.nav .logo {
+  width: 9.4rem;
+  height: 4.8rem;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+.nav-item .nav-link {
+  padding: 1rem;
+  margin-right: 1.2rem;
+}
+.nav .nav-btn {
+  background-color: #FF0000;
+  padding: 1.6rem 4.3rem;
+  color: #FFFFFF;
+  border-radius: 8px;
+}
+
+.footer {
+  display: flex;
+  padding: 6.4rem 9.6rem;
+  justify-content: space-between;
+}
+.footer .col-1 .footer-logo {
+  width: 9.4rem;
+  height: 4.8rem;
+}
+.footer .col-1 ul .footer-item {
+  margin-top: 2.4rem;
+}
+.footer .col-1 ul .social-item {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 2rem;
+}
+.footer .col-2 .footer-header {
+  margin-bottom: 2.3rem;
+}
+.footer .col-2 .col-2-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8;
+}
+.footer .col-2 .col-2-link {
+  padding: 1rem 1rem 1rem 0;
+}
+.footer .col-3 .footer-header {
+  margin-bottom: 2.3rem;
+}
+.footer .col-3 li {
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.footer .col-3 li .icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.login-back-drop {
+  position: fixed;
+  width: 100vw;
+  height: 1000vh;
+  visibility: hidden;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.login {
+  position: fixed;
+  visibility: hidden;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 4.8rem;
+  left: 50%;
+  border-radius: 2.4rem;
+  background: #FFF;
+  transform: translate(-50%, -50%);
+  z-index: 35;
+}
+.login-header .welcome {
+  color: #202020;
+  font-family: "Fredoka", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.6rem;
+  line-height: 4.4rem;
+}
+.login-header .login-p {
+  color: rgba(32, 32, 32, 0.7);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+.login .middle {
+  width: 100%;
+  margin-top: 4rem;
+}
+.login .middle .login-option {
+  margin-bottom: 2.4rem;
+  display: flex;
+  width: 54rem;
+  align-items: center;
+  text-align: center;
+  border-radius: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  border: 1px solid #E2E2E2;
+  background: #FFF;
+}
+.login .middle .login-option p {
+  color: #202020;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+.login .middle .guest {
+  text-align: center;
+  color: #202020;
+  margin-top: 0.8rem;
+  margin-bottom: 2.4rem;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+.login .middle .check-out-btn {
+  width: 100%;
+  display: flex;
+  padding: 1.2rem 3.2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid #F00;
+  background: #F00;
+}
+.login .middle .check-out-btn p {
+  color: #FFF;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+.login .paragraph {
+  color: #202020;
+  text-align: center;
+  margin-top: 4.8rem;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  width: 38.1rem;
+  line-height: 1.6rem;
+}
+
+.outlet-main-img {
+  width: 100%;
+  margin-top: 8rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 44rem;
+  background-image: url("../images/background4.png");
+}
+
+.outlet-hero {
+  padding: 8rem 9.8rem;
+}
+.outlet-hero-h {
+  color: #202020;
+  font-family: "Fredoka", sans-serif;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  line-height: 5.4rem;
+}
+.outlet-hero-p {
+  color: rgba(32, 32, 32, 0.7);
+  font-family: Satoshi;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 2.4rem;
+}
+.outlet-hero-content .filter {
+  width: 100%;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.outlet-hero-content .filter-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+  border: 1px solid #E2E2E2;
+  padding: 1.2rem 1.6rem;
+  background: #FFF;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.outlet-hero-content-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.outlet-hero-content th {
+  background: #F6F6F6;
+}
+.outlet-hero-content th .table-header {
+  color: #202020;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.outlet-hero-content th,
+.outlet-hero-content td {
+  padding: 1.6rem 2.4rem;
+}
+.outlet-hero-content td {
+  color: #202020;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+.outlet-hero-content-buttom {
+  width: 100%;
+  margin-top: 4.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.outlet-hero-content-buttom .dropdown {
+  display: flex;
+  gap: 1.6rem;
+}
+.outlet-hero-content-buttom .dropdown label,
+.outlet-hero-content-buttom .dropdown #rowsPerPage {
+  color: #202020;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+.outlet-hero-content-buttom .pagination {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.outlet-hero-content-buttom .pagination li .pagination-btn {
+  display: flex;
+  padding: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #E2E2E2;
+  background: #FFF;
+}
+.outlet-hero-content-buttom .pagination ul {
+  display: flex;
+  gap: 0.8rem;
+}
+.outlet-hero-content-buttom .pagination ul li .pagination-btn {
+  display: flex;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 4px;
+  background: #F6F6F6;
+  height: 100%;
+  padding: 0.4rem;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=outlets.css.map */

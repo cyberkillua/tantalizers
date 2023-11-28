@@ -1,0 +1,160 @@
+@import "../scss/main";
+
+
+.hero {
+    background-image: url("../images/background3.png");
+    margin-top: 7rem;
+    width: 100%;
+    background-size: contain;
+    height: 40rem;
+}
+
+
+.contact-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding: 8rem 9.6rem 12.1rem 9.6rem;
+
+    &-left {
+        border-radius: 8px;
+        border: 1px solid #E9E9E9;
+        background: #F6F6F6;
+        display: flex;
+        width: 50.8rem;
+        height: fit-content;
+        padding: 3.2rem 2.4rem;
+        flex-direction: column;
+        align-items: flex-start;
+        // gap: 40px;
+
+        &-h {
+            color:  #300;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 2.8rem;
+        }
+
+        ul {
+            margin-top: 4.0rem;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: .8rem;
+                margin-bottom: 3.2rem;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        width: 2.4rem;
+                        height: 2.4rem;
+                        margin-right: 1.6rem;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &-right {
+        display: flex;
+        width: 70rem;
+        height: fit-content;
+        padding: 3.2rem 4.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+        border: 1px solid red;
+        border-radius: 8px;
+        border: 1px solid #E9E9E9;
+        background: #FFF;
+
+        .contact-header {
+            color: #202020;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 2.8rem;
+            /* 116.667% */
+        }
+
+        .content-text {
+            width: 59.5rem;
+            color: rgba(32, 32, 32, 0.70);
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 2.4rem;
+        }
+
+        .form-group {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+
+            .input-wrapper {
+                border-radius: 8px;
+                border: 1px solid #E2E2E2;
+                background: #FFF;
+                width: 100%;
+                padding: .8rem 1.6rem;
+                align-items: center;
+                height: 4rem;
+                display: flex;
+
+                .form-input {
+                    width: 100%;
+                    border: none;
+                    font-size: 1.8rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 2.4rem;
+
+                    &::placeholder {
+                        color: #8D8D8D;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .form-input--textarea {
+                min-height: 10.4rem;
+                border: 1px solid #E2E2E2;
+                padding: 1rem 0 0 1rem;
+                resize: none;
+                width: 100%;
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 2.4rem;
+
+                &::placeholder {
+                    color: #8D8D8D;
+                }
+            }
+        }
+
+        .form-submit {
+            align-self: center;
+            color: #fff;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 1.2rem 1.6rem;
+            border-radius: 8px;
+            border: 1px solid #F00;
+            background: #F00;
+            box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+        }
+    }
+}
