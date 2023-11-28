@@ -205,9 +205,9 @@
                     </div>
                     <p class="vat">Prices Inclusive of VAT and Consumption Tax</p>
                 </div>
-                <a href="" class="checkout">
+                <button onclick="toggleLogin()" class="checkout">
                     <p>Proceed to Checkout</p>
-                </a>
+                </button>
 
                 <div class="tantalize-section" id="tantalize">
                     <h3 class="section-header">Can we tantalize you with?</h3>
@@ -707,7 +707,7 @@
                 </a>
                 <p class="guest">or continue as a guest</p>
 
-                <a href="" class="check-out-btn">
+                <a href="../checkout/checkout.html" class="check-out-btn">
                     <p>
                         Proceed to Checkout
                     </p>
@@ -717,6 +717,15 @@
                 Privacy Policy and Cookies Policy</p>
         </div>
     </section>
+    
 </body>
+<script>
+    const toggleLogin = () => {
+        const login = document.querySelector(".login")
+        const loginBackDrop = document.querySelector(".login-back-drop")
+        login.style.visibility = "visible";
+        loginBackDrop.style.visibility = "visible"
+}
+</script>
 
 </html>
