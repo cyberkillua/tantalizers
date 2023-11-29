@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>order-complete</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/ordercomplete.css">
+    <link rel="stylesheet" href="../css/trackorder.css">
 </head>
 
 <body>
-    <section class="order-complete-container">
+    <section class="trackorder-container">
         <nav class="nav">
             <a href="../home/home.html">
                 <img class="logo" src="../images/logo.svg" alt="logo">
@@ -49,8 +49,8 @@
                 <p class="paragraph--2">Sign in</p>
             </button>
         </nav>
-        <main class="order-complete">
-            <div class="order-compelete-header">
+        <main class="trackorder">
+            <div class="trackorder-header">
                 <div class="top">
                     <h3 class="location">
                         Ikeja - Oregun
@@ -84,32 +84,160 @@
                             d="M80.7071 8.70711C81.0976 8.31658 81.0976 7.68342 80.7071 7.29289L74.3431 0.928932C73.9526 0.538408 73.3195 0.538408 72.9289 0.928932C72.5384 1.31946 72.5384 1.95262 72.9289 2.34315L78.5858 8L72.9289 13.6569C72.5384 14.0474 72.5384 14.6805 72.9289 15.0711C73.3195 15.4616 73.9526 15.4616 74.3431 15.0711L80.7071 8.70711ZM0 9H2L2 7H0L0 9ZM6 9H10V7L6 7V9ZM14 9H18V7L14 7V9ZM22 9L26 9V7L22 7V9ZM30 9L34 9V7L30 7V9ZM38 9L42 9V7L38 7V9ZM46 9L50 9V7L46 7V9ZM54 9L58 9V7L54 7V9ZM62 9H66V7L62 7V9ZM70 9H74V7L70 7V9ZM78 9H80V7H78V9Z"
                             fill="white" />
                     </svg>
-                    <div class="step">
+                    <div class="step active">
                         <p>4. Track your order</p>
                     </div>
                 </div>
             </div>
+            <div class="trackorder-content">
+                <div class="content-left">
+                    <div class="top-card">
+                        <p class="code">Order LQV2X</p>
+                        <p class="time-item">Tantalizers | 05:13pm | 8 Items</p>
+                    </div>
+                    <div class="bottom-card">
+                        <h3 class="card-subtitle">Order Details</h3>
+                        <div class="card-content-header">
+                            <p class="left-p">From</p>
+                            <p class="left-p">Deliver to</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="location">
+                                <p>Lagos</p>
+                                <p>Lawal Jimoh</p>
+                            </div>
+                            <div class="address">
+                                <p class="senders--address">
+                                    Conoil Filling Station,
+                                    75 Kudirat Abiola Way,
+                                    Oregun
+                                </p>
+                                <p class="recievers--address">
+                                    12 Ifesowapo Street,
+                                    Ogudu Ori-oke, Ogudu,
+                                    Ojot
+                                </p>
+                            </div>
+                        </div>
 
-            <div class="main-content">
-                <svg class="success-svg" xmlns="http://www.w3.org/2000/svg" width="224" height="224" viewBox="0 0 224 224" fill="none">
-                    <g clip-path="url(#clip0_506_2606)">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 112C0 82.2958 11.8 53.8081 32.804 32.804C53.8081 11.8 82.2958 0 112 0C141.704 0 170.192 11.8 191.196 32.804C212.2 53.8081 224 82.2958 224 112C224 141.704 212.2 170.192 191.196 191.196C170.192 212.2 141.704 224 112 224C82.2958 224 53.8081 212.2 32.804 191.196C11.8 170.192 0 141.704 0 112ZM105.609 159.936L170.091 79.3259L158.443 70.0075L103.458 138.716L64.512 106.266L54.9547 117.734L105.609 159.951V159.936Z"
-                            fill="#168F13" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_506_2606">
-                            <rect width="224" height="224" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
-                <h3 class="congrats">Congratulations!!!</h3>
-                <p class="congarts-p">Your order has been received, and is being processed.</p>
-                <a href="../trackorder/trackorder.html" class="track-btn">
-                    <p>
-                        Track your order
-                    </p>
-                </a>
+                        <h3 class="summary">Summary</h3>
+                        <div class="card-content-bottom">
+                            <div class="card-item">
+                                <p>x4 Spaghetti + Chicken</p>
+                                <div class="price">₦500</div>
+                            </div>
+                            <div class="card-item">
+                                <p>x3 Jollof Rice + Chicken</p>
+                                <div class="price">₦650</div>
+                            </div>
+                            <div class="card-item">
+                                <p>x1 Fried Rice with Chicken and Drink</p>
+                                <div class="price">₦800</div>
+                            </div>
+                            <div class="card-item">
+                                <p class="total">TOTAL</p>
+                                <div class="price">₦500</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <p class="right-subtitle">Your order will arrive in</p>
+                    <h3 class="time">20 Minutes</h3>
+                    <div class="right-content">
+                        <div class="content-col-1">
+                            <p>05:21 pm</p>
+                            <p>05:42 pm</p>
+                            <p>05:52 pm</p>
+                            <p>06:00 pm</p>
+                        </div>
+
+                        <svg class="content-col-2" width="20" height="326" viewBox="0 0 20 326" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 0.666667C7.05448 0.666667 4.66667 3.05448 4.66667 6C4.66667 8.94552 7.05448 11.3333 10 11.3333C12.9455 11.3333 15.3333 8.94552 15.3333 6C15.3333 3.05448 12.9455 0.666667 10 0.666667ZM9 54C9 54.5523 9.44772 55 10 55C10.5523 55 11 54.5523 11 54H9ZM9 8C9 8.55228 9.44772 9 10 9C10.5523 9 11 8.55228 11 8H9ZM11 12C11 11.4477 10.5523 11 10 11C9.44772 11 9 11.4477 9 12H11ZM9 16C9 16.5523 9.44772 17 10 17C10.5523 17 11 16.5523 11 16H9ZM11 20C11 19.4477 10.5523 19 10 19C9.44772 19 9 19.4477 9 20H11ZM9 24C9 24.5523 9.44772 25 10 25C10.5523 25 11 24.5523 11 24H9ZM11 28C11 27.4477 10.5523 27 10 27C9.44772 27 9 27.4477 9 28H11ZM9 32C9 32.5523 9.44772 33 10 33C10.5523 33 11 32.5523 11 32H9ZM11 36C11 35.4477 10.5523 35 10 35C9.44772 35 9 35.4477 9 36H11ZM9 40C9 40.5523 9.44772 41 10 41C10.5523 41 11 40.5523 11 40H9ZM11 44C11 43.4477 10.5523 43 10 43C9.44772 43 9 43.4477 9 44H11ZM9 48C9 48.5523 9.44772 49 10 49C10.5523 49 11 48.5523 11 48H9ZM11 52C11 51.4477 10.5523 51 10 51C9.44772 51 9 51.4477 9 52H11ZM9 6V8H11V6H9ZM9 12V16H11V12H9ZM9 20L9 24H11L11 20H9ZM9 28V32H11V28H9ZM9 36V40H11V36H9ZM9 44V48H11L11 44H9ZM9 52V54H11V52H9Z"
+                                fill="#1AAC17" />
+                            <g clip-path="url(#clip0_557_2502)">
+                                <path
+                                    d="M18.3337 63.2333V64C18.3326 65.797 17.7507 67.5455 16.6748 68.9848C15.5988 70.4241 14.0864 71.477 12.3631 71.9866C10.6399 72.4961 8.79804 72.4349 7.11238 71.8121C5.42673 71.1894 3.98754 70.0384 3.00946 68.5309C2.03138 67.0233 1.56682 65.24 1.68506 63.4469C1.80329 61.6538 2.498 59.9469 3.66556 58.5809C4.83312 57.2148 6.41098 56.2628 8.16382 55.8668C9.91665 55.4707 11.7505 55.6519 13.392 56.3833"
+                                    stroke="#1AAC17" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 63.1666L10 65.6666L18.3333 57.3333" stroke="#1AAC17"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <path d="M10 74L10 138" stroke="#1AAC17" stroke-width="2" stroke-linecap="round"
+                                stroke-dasharray="4 4" />
+                            <g clip-path="url(#clip1_557_2502)">
+                                <path
+                                    d="M18.3337 147.233V148C18.3326 149.797 17.7507 151.546 16.6748 152.985C15.5988 154.424 14.0864 155.477 12.3631 155.987C10.6399 156.496 8.79804 156.435 7.11238 155.812C5.42673 155.189 3.98754 154.038 3.00946 152.531C2.03138 151.023 1.56682 149.24 1.68506 147.447C1.80329 145.654 2.498 143.947 3.66556 142.581C4.83312 141.215 6.41098 140.263 8.16382 139.867C9.91665 139.471 11.7505 139.652 13.392 140.383"
+                                    stroke="#1AAC17" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 147.167L10 149.667L18.3333 141.333" stroke="#1AAC17"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <path d="M10 158L10 222" stroke="#1AAC17" stroke-width="2" stroke-linecap="round"
+                                stroke-dasharray="4 4" />
+                            <g clip-path="url(#clip2_557_2502)">
+                                <path
+                                    d="M18.3337 231.233V232C18.3326 233.797 17.7507 235.546 16.6748 236.985C15.5988 238.424 14.0864 239.477 12.3631 239.987C10.6399 240.496 8.79804 240.435 7.11238 239.812C5.42673 239.189 3.98754 238.038 3.00946 236.531C2.03138 235.023 1.56682 233.24 1.68506 231.447C1.80329 229.654 2.498 227.947 3.66556 226.581C4.83312 225.215 6.41098 224.263 8.16382 223.867C9.91665 223.471 11.7505 223.652 13.392 224.383"
+                                    stroke="#1AAC17" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 231.167L10 233.667L18.3333 225.333" stroke="#1AAC17"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <path d="M10 242L10 306" stroke="#1AAC17" stroke-width="2" stroke-linecap="round"
+                                stroke-dasharray="4 4" />
+                            <g clip-path="url(#clip3_557_2502)">
+                                <path
+                                    d="M18.3337 315.233V316C18.3326 317.797 17.7507 319.546 16.6748 320.985C15.5988 322.424 14.0864 323.477 12.3631 323.987C10.6399 324.496 8.79804 324.435 7.11238 323.812C5.42673 323.189 3.98754 322.038 3.00946 320.531C2.03138 319.023 1.56682 317.24 1.68506 315.447C1.80329 313.654 2.498 311.947 3.66556 310.581C4.83312 309.215 6.41098 308.263 8.16382 307.867C9.91665 307.471 11.7505 307.652 13.392 308.383"
+                                    stroke="#1AAC17" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 315.167L10 317.667L18.3333 309.333" stroke="#1AAC17"
+                                    stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_557_2502">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 54)" />
+                                </clipPath>
+                                <clipPath id="clip1_557_2502">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 138)" />
+                                </clipPath>
+                                <clipPath id="clip2_557_2502">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 222)" />
+                                </clipPath>
+                                <clipPath id="clip3_557_2502">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 306)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+                        <div class="content-col-3">
+                            <div class=" status">
+                                <p>Order Status</p>
+                            </div>
+                            <div class="col-3-items">
+                                <div class="col-3-item">
+                                    <p class="item-header">Order Received</p>
+                                    <p class="item-p">Your order has been received.</p>
+                                </div>
+                                <div class="col-3-item">
+                                    <p class="item-header">Order Received</p>
+                                    <p class="item-p">Your order has been received.</p>
+                                </div>
+                                <div class="col-3-item">
+                                    <p class="item-header">Order Received</p>
+                                    <p class="item-p">Your order has been received.</p>
+                                </div>
+                                <div class="col-3-item">
+                                    <p class="item-header">Order Received</p>
+                                    <p class="item-p">Your order has been received.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </section>
@@ -224,8 +352,7 @@
             <ul class="contact-item">
                 <li>
                     <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                            fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <g clip-path="url(#clip0_973_12696)">
                                 <path
                                     d="M10 0C6.7298 0 4.0498 2.672 4.0498 5.9332C4.0498 7.1968 4.4534 8.3712 5.1364 9.3364L9.2738 16.489C9.8532 17.246 10.2384 17.1022 10.7202 16.449L15.2838 8.683C15.3758 8.5162 15.4482 8.3386 15.5112 8.1572C15.8008 7.4515 15.9497 6.69601 15.9496 5.9332C15.9498 2.672 13.2706 0 10 0ZM10 2.78C11.7612 2.78 13.1616 4.1772 13.1616 5.9332C13.1616 7.6892 11.7612 9.0858 10 9.0858C8.239 9.0858 6.83801 7.6894 6.83801 5.9332C6.83801 4.1772 8.239 2.7802 10 2.7802V2.78Z"
@@ -247,8 +374,7 @@
                 </li>
                 <li>
                     <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                            fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path
                                 d="M18.3332 5.00004C18.3332 4.08337 17.5832 3.33337 16.6665 3.33337H3.33317C2.4165 3.33337 1.6665 4.08337 1.6665 5.00004V15C1.6665 15.9167 2.4165 16.6667 3.33317 16.6667H16.6665C17.5832 16.6667 18.3332 15.9167 18.3332 15V5.00004ZM16.6665 5.00004L9.99984 9.16671L3.33317 5.00004H16.6665ZM16.6665 15H3.33317V6.66671L9.99984 10.8334L16.6665 6.66671V15Z"
                                 fill="#202020" fill-opacity="0.7" />
@@ -258,8 +384,7 @@
                 </li>
                 <li>
                     <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                            fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path
                                 d="M16.6667 12.9167C15.6667 12.9167 14.5833 12.75 13.6667 12.4167H13.4167C13.1667 12.4167 13 12.5 12.8333 12.6667L11 14.5C8.66667 13.25 6.66667 11.3333 5.5 9L7.33333 7.16667C7.58333 6.91667 7.66667 6.58333 7.5 6.33333C7.25 5.41667 7.08333 4.33333 7.08333 3.33333C7.08333 2.91667 6.66667 2.5 6.25 2.5H3.33333C2.91667 2.5 2.5 2.91667 2.5 3.33333C2.5 11.1667 8.83333 17.5 16.6667 17.5C17.0833 17.5 17.5 17.0833 17.5 16.6667V13.75C17.5 13.3333 17.0833 12.9167 16.6667 12.9167ZM4.16667 4.16667H5.41667C5.5 4.91667 5.66667 5.66667 5.83333 6.33333L4.83333 7.33333C4.5 6.33333 4.25 5.25 4.16667 4.16667ZM15.8333 15.8333C14.75 15.75 13.6667 15.5 12.6667 15.1667L13.6667 14.1667C14.3333 14.3333 15.0833 14.5 15.8333 14.5V15.8333Z"
                                 fill="#202020" fill-opacity="0.7" />
@@ -269,8 +394,7 @@
                 </li>
                 <li>
                     <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                            fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path
                                 d="M10 2.5C5.85938 2.5 2.5 5.85938 2.5 10C2.5 14.1406 5.85938 17.5 10 17.5C14.1406 17.5 17.5 14.1406 17.5 10C17.5 5.85938 14.1406 2.5 10 2.5Z"
                                 stroke="#202020" stroke-opacity="0.7" stroke-width="1.25" stroke-miterlimit="10" />
