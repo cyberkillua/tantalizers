@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>management profile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/management.css">
+</head>
+
+<body>
+    <section class="management">
+        <nav class="nav">
+            <a href="../index.html">
+                <img class="logo" src="../images/logo.svg" alt="logo">
+            </a>
+
+            <ul class="nav-item">
+                <a href="../order/order.html" class="nav-link">
+                    <li>
+                        <p>Order now</p>
+                    </li>
+                </a>
+                <div class="nav-link">
+                    <li onclick="toggleDropDown()">
+                        <p>About</p>
+                        <div class="drop-down">
+                            <svg class="drop-down-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.175 7.1499L10 10.9749L13.825 7.1499L15 8.33324L10 13.3332L5 8.33324L6.175 7.1499Z"
+                                    fill="#202020" />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="about-menu">
+                        <a href="../qehs/qehs.html" class="about-menu-item">
+                            <li>
+                                <p>Q.E.H.S</p>
+                            </li>
+                        </a>
+                        <a href="../bod/bod.html" class="about-menu-item">
+                            <li>
+                                <p>Board Of Directors</p>
+                            </li>
+                        </a>
+
+                        <a href="../management/management.html" class="about-menu-item">
+                            <li>
+                                <p>
+                                    Management Profile
+                                </p>
+                            </li>
+                        </a>
+                    </ul>
+                </div><a href="../franchise/franchise.html" class="nav-link">
+                    <li>
+                        <p>Franchise</p>
+                    </li>
+                </a><a href="../outlets/outlets.html" class="nav-link">
+                    <li>
+                        <p>Outlets</p>
+                    </li>
+                </a><a href="../contact/contact.html" class="nav-link">
+                    <li>
+                        <p>Contact</p>
+                    </li>
+                </a><a href="../cart/cart.html" class="nav-link">
+                    <li>
+                        <p>Cart</p>
+                    </li>
+                </a>
+            </ul>
+
+            <button class="nav-btn">
+                <p class="paragraph--2">Sign in</p>
+            </button>
+        </nav>
+        
+        <main class="management-container">
+            <div class="management-hero"></div>
+
+            <div class="management-content">
+                <h3 class="management-header">Management Profile</h3>
+                <p>The Board of Tantalizers Plc. is made up of eminent professionals who have made their mark in their respective fields of endeavour, thereby bringing several years of experience to bear on the Board.</p>
+                <div class="management-grid">
+                    <div class="grid-card">
+                        <img src="../images/managing-director.png" alt="">
+                        <p class="name">Mrs. Abosede Ayeni</p>
+                        <p class="post">Managing Director/CEO</p>
+                    </div>
+                    <div class="grid-card">
+                        <img src="../images/director.png" alt="">
+                        <p class="name">Mrs. Abosede Ayeni</p>
+                        <p class="post">Managing Director/CEO</p>
+                    </div>
+                    <div class="grid-card">
+                        <img src="../images/last.png" alt="">
+                        <p class="name">Mrs. Abosede Ayeni</p>
+                        <p class="post">Managing Director/CEO</p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="empty-image"></div>
+                        <p class="name">Mrs. Abosede Ayeni</p>
+                        <p class="post">Managing Director/CEO</p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="empty-image"></div>
+                        <p class="name">Mrs. Abosede Ayeni</p>
+                        <p class="post">Managing Director/CEO</p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="empty-image"></div>
+                        <p class="name">Mrs. Abosede Ayeni</p>
+                        <p class="post">Managing Director/CEO</p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="empty-image"></div>
+                        <p class="name">Mrs. Abosede Ayeni</p>
+                        <p class="post">Managing Director/CEO</p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="empty-image"></div>
+                        <p class="name">Mrs. Abosede Ayeni</p>
+                        <p class="post">Managing Director/CEO</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script>
+        function toggleDropDown() {
+            const aboutMenu = document.querySelector(".about-menu")
+            aboutMenu.classList.toggle("opacity1")
+        }
+
+    </script>
+</body>
+
+</html>

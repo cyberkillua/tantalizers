@@ -353,54 +353,168 @@ ul {
   line-height: 1.6rem;
 }
 
-.policy-hero {
-  width: 100%;
-  margin-top: 8rem;
+.hero {
+  width: 100vw;
+  background-image: url("../images/Background.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 44rem;
-  background-image: url("../images/background4.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25rem;
+  padding-bottom: 4.8rem;
+}
+.hero .header {
+  font-weight: 700;
+  width: 68rem;
+  text-align: center;
+}
+.hero .hero-content {
+  width: 48.8rem;
+  height: 27.6rem;
+  margin-top: 6.8rem;
+  padding: 4rem 2.4rem;
+  border-radius: 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.3);
+}
+.hero .hero-content .bar {
+  display: flex;
+  align-items: center;
+  border-radius: 10rem;
+  height: 6.4rem;
+  padding: 0.9rem 1.6rem;
+  justify-content: space-between;
+  background: #E2E2E2;
+}
+.hero .hero-content .bar .restaurant {
+  border-radius: 5.6rem;
+  background: #FFF;
+}
+.hero .hero-content .bar .restaurant,
+.hero .hero-content .bar .Tantis-Pot {
+  display: flex;
+  width: 20.4rem;
+  padding: 0.8rem 1.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.hero .hero-content-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.hero .hero-content-bottom .select,
+.hero .hero-content-bottom .hero-option {
+  margin-top: 2rem;
+  display: flex;
+  width: 44rem;
+  height: 5rem;
+  font-family: inherit;
+  padding: 1rem;
+  color: #8D8D8D;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  gap: 0.4rem;
+}
+.hero .hero-content-bottom .select .hero-option,
+.hero .hero-content-bottom .hero-option .hero-option {
+  color: #8D8D8D;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
 }
 
-.policy-content {
-  padding: 8rem 38rem 8rem 9.2rem;
+.info {
+  padding: 9.6rem;
 }
-.policy-content .header {
-  color: #202020;
-  font-size: 3.2rem;
-  font-style: normal;
-  font-weight: 600;
-  margin-top: 3.2rem;
-  margin-bottom: 1.6rem;
-  line-height: 3.6rem;
+.info-top-header {
+  margin-bottom: 4rem;
 }
-.policy-content p {
-  color: rgba(32, 32, 32, 0.7);
-  text-align: justify;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 500;
-  margin-bottom: 1.6rem;
-  line-height: 2.4rem;
+.info-top .carousel {
+  margin-bottom: 9.6rem;
 }
-.policy-content .item-p {
-  margin-bottom: 0;
+.info-top .carousel .card {
+  margin-right: 3.7rem;
 }
-.policy-content .header:nth-of-type(7) {
+.info-top .carousel .card .carousel-image {
+  width: 22rem;
+  height: 18rem;
+  border-radius: 1.6rem;
   margin-bottom: 1.6rem;
 }
-.policy-content ul {
-  list-style: disc;
-  margin-left: 2.5rem;
+.info-top .carousel .card .card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 22rem;
 }
-.policy-content ul li {
-  color: rgba(32, 32, 32, 0.7);
-  text-align: justify;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 2.4rem;
+.info-top .carousel .card .card-bottom .food-name {
+  text-align: center;
+  width: 100%;
+  height: 4rem;
 }
-.policy-content .header:first-child {
-  margin-top: 0;
-}/*# sourceMappingURL=policy.css.map */
+.info-top .carousel .card .card-bottom .price {
+  text-align: center;
+}
+.info-top .carousel .swiper-pagination {
+  border: 1px solid red;
+  position: fixed;
+  width: 100%;
+  display: block;
+  height: 5rem;
+}
+.info-bottom-header {
+  margin-bottom: 4rem;
+}
+.info-bottom-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.info-bottom-content .instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+.info-bottom-content .instructions-icon {
+  width: 15rem;
+  height: 15rem;
+}
+.info-bottom-content .instructions p {
+  width: 22rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.ad {
+  background-image: url("../images/Background2.png");
+  width: 100vw;
+  padding: 22rem 0 17rem 9.6rem;
+  background-size: cover;
+}
+.ad-content {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+}
+.ad-content-header {
+  margin-bottom: 1.6rem;
+}
+.ad-content-p {
+  margin-bottom: 5rem;
+}
+.ad-content .ad-btn-container {
+  display: flex;
+  gap: 1.3rem;
+}
+.ad-content .ad-btn-container .ad-btn {
+  background-color: #FFF;
+  padding: 1.2rem 3.2rem;
+  border-radius: 8px;
+  border: 1px solid #E2E2E2;
+}/*# sourceMappingURL=index.css.map */

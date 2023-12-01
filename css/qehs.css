@@ -353,7 +353,7 @@ ul {
   line-height: 1.6rem;
 }
 
-.policy-hero {
+.qech-hero {
   width: 100%;
   margin-top: 8rem;
   background-repeat: no-repeat;
@@ -362,45 +362,45 @@ ul {
   background-image: url("../images/background4.png");
 }
 
-.policy-content {
-  padding: 8rem 38rem 8rem 9.2rem;
+main .qech-content {
+  padding: 8rem 38rem 15.2rem 9.8rem;
 }
-.policy-content .header {
+main .qech-content h3 {
   color: #202020;
+  font-family: "Fredoka", sans-serif;
   font-size: 3.2rem;
   font-style: normal;
   font-weight: 600;
-  margin-top: 3.2rem;
-  margin-bottom: 1.6rem;
   line-height: 3.6rem;
+  /* 112.5% */
 }
-.policy-content p {
+main .qech-content p {
   color: rgba(32, 32, 32, 0.7);
   text-align: justify;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 500;
-  margin-bottom: 1.6rem;
   line-height: 2.4rem;
+  /* 133.333% */
 }
-.policy-content .item-p {
+main .qech-content .hero-content h3 {
+  margin-bottom: 3.2rem;
+}
+main .qech-content .hero-content p {
+  margin-bottom: 2rem;
+}
+main .qech-content .hero-content ul {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+main .qech-content .hero-content ul li p {
   margin-bottom: 0;
 }
-.policy-content .header:nth-of-type(7) {
-  margin-bottom: 1.6rem;
+main .qech-content-section h3 {
+  margin-top: 3.2rem;
+  margin-bottom: 1rem;
 }
-.policy-content ul {
-  list-style: disc;
-  margin-left: 2.5rem;
-}
-.policy-content ul li {
-  color: rgba(32, 32, 32, 0.7);
-  text-align: justify;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 2.4rem;
-}
-.policy-content .header:first-child {
-  margin-top: 0;
-}/*# sourceMappingURL=policy.css.map */
+main .qech-content-section p {
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=qehs.css.map */

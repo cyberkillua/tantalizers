@@ -1,47 +1,47 @@
 const carousel = document.querySelector(".carousel")
 const carouselChildren = [
     {
-        src: "../images/frame.png",
+        src: "./images/frame.png",
         name: "Spaghetti and Crunchy Chicken",
         price: "₦ 2,330.00"
     },
     {
-        src: "../images/spag.png",
+        src: "./images/spag.png",
         name: "Egusi Soup with Shaki and Semovita",
         price: "₦ 2,330.00"
     },
     {
-        src: "../images/yam.png",
+        src: "./images/yam.png",
         name: "Fried Rice and Pepper Grilled Chicken",
         price: "₦ 2,330.00"
     },
     {
-        src: "../images/rice.png",
+        src: "./images/rice.png",
         name: "Moin-moin and Pepper Grilled Chicken",
         price: "₦ 2,330.00"
     },
     {
-        src: "../images/jollofrice.png",
+        src: "./images/jollofrice.png",
         name: "Jollof Rice and Barbecue Chicken",
         price: "₦ 2,330.00"
     },
     {
-        src: "../images/frame.png",
+        src: "./images/frame.png",
         name: "Spaghetti and Crunchy Chicken",
         price: "₦ 2,330.00"
     },
     {
-        src: "../images/spag.png",
+        src: "./images/spag.png",
         name: "Spaghetti and Crunchy Chicken",
         price: "₦ 2,330.00"
     },
     {
-        src: "../images/yam.png",
+        src: "./images/yam.png",
         name: "Fried Rice and Pepper Grilled Chicken",
         price: "₦ 2,330.00"
     },
     {
-        src: "../images/rice.png",
+        src: "./images/rice.png",
         name: "Moin-moin and Pepper Grilled Chicken",
         price: "₦ 2,330.00"
     },

@@ -7,8 +7,8 @@
     <title>Tantalizer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="module" src="home.js"></script>
-    <link rel="stylesheet" href="../css/home.css">
+    <script type="module" src="./script.js"></script>
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -16,32 +16,61 @@
 <body>
     <div class="home">
         <nav class="nav">
-            <a href="../home/home.html">
-                <img class="logo" src="../images/logo.svg" alt="logo">
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.svg" alt="logo">
             </a>
 
             <ul class="nav-item">
-                <a href="../order/order.html" class="nav-link">
+                <a href="./order/order.html" class="nav-link">
                     <li>
                         <p>Order now</p>
                     </li>
-                </a><a href="#" class="nav-link">
-                    <li>
+                </a>
+                <div class="nav-link">
+                    <li onclick="toggleDropDown()">
                         <p>About</p>
+                        <div class="drop-down">
+                            <svg class="drop-down-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.175 7.1499L10 10.9749L13.825 7.1499L15 8.33324L10 13.3332L5 8.33324L6.175 7.1499Z"
+                                    fill="#202020" />
+                            </svg>
+                        </div>
                     </li>
-                </a><a href="../franchise/franchise.html" class="nav-link">
+                    <ul class="about-menu">
+                        <a href="./qehs/qehs.html" class="about-menu-item">
+                            <li>
+                                <p>Q.E.H.S</p>
+                            </li>
+                        </a>
+                        <a href="./bod/bod.html" class="about-menu-item">
+                            <li>
+                                <p>Board Of Directors</p>
+                            </li>
+                        </a>
+
+                        <a href="./management/management.html" class="about-menu-item">
+                            <li>
+                                <p>
+                                    Management Profile
+                                </p>
+                            </li>
+                        </a>
+                    </ul>
+                </div><a href="./franchise/franchise.html" class="nav-link">
                     <li>
                         <p>Franchise</p>
                     </li>
-                </a><a href="../outlets/outlets.html" class="nav-link">
+                </a><a href="./outlets/outlets.html" class="nav-link">
                     <li>
                         <p>Outlets</p>
                     </li>
-                </a><a href="../contact/contact.html" class="nav-link">
+                </a><a href="./contact/contact.html" class="nav-link">
                     <li>
                         <p>Contact</p>
                     </li>
-                </a><a href="#" class="nav-link">
+                </a><a href="./cart/cart.html" class="nav-link">
                     <li>
                         <p>Cart</p>
                     </li>
@@ -211,7 +240,7 @@
         </section>
         <footer class="footer">
             <div class="col-1">
-                <img src="../images/logo.svg" alt="" class="footer-logo">
+                <img src="./images/logo.svg" alt="" class="footer-logo">
                 <ul>
                     <li class="footer-item">
                         <p class="paragrph--5">Every bite, a promise kept</p>
@@ -289,23 +318,23 @@
                     Useful Links
                 </h3>
                 <ul class="col-2-item">
-                    <a href="../career/career.html" class="col-2-link">
+                    <a href="./career/career.html" class="col-2-link">
                         <li>
                             <p>Career</p>
                         </li>
-                    </a><a href="../franchise/franchise.html" class="col-2-link">
+                    </a><a href="./franchise/franchise.html" class="col-2-link">
                         <li>
                             <p>Franchise</p>
                         </li>
-                    </a><a href="../outlets/outlets.html" class="col-2-link">
+                    </a><a href="./outlets/outlets.html" class="col-2-link">
                         <li>
                             <p>Outlets</p>
                         </li>
-                    </a><a href="../policy/policy.html" class="col-2-link">
+                    </a><a href="./policy/policy.html" class="col-2-link">
                         <li>
                             <p>Privacy Policy</p>
                         </li>
-                    </a><a href="../contact/contact.html" class="col-2-link">
+                    </a><a href="./contact/contact.html" class="col-2-link">
                         <li>
                             <p>Contact Us</p>
                         </li>
@@ -382,7 +411,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
     </script>
+    <script>
+        function toggleDropDown() {
+            const aboutMenu = document.querySelector(".about-menu")
+            aboutMenu.classList.toggle("opacity1")
+        }
 
+    </script>
 </body>
 
 </html>

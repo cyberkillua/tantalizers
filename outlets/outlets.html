@@ -11,45 +11,72 @@
 </head>
 
 <body>
-    <section class="outlet">
-        <nav class="nav">
-            <a href="../home/home.html">
-                <img class="logo" src="../images/logo.svg" alt="logo">
+    <  <nav class="nav">
+        <a href="../index.html">
+            <img class="logo" src="../images/logo.svg" alt="logo">
+        </a>
 
+        <ul class="nav-item">
+            <a href="../order/order.html" class="nav-link">
+                <li>
+                    <p>Order now</p>
+                </li>
             </a>
+            <div href="#" class="nav-link">
+                <li onclick="toggleDropDown()">
+                    <p>About</p>
+                    <div class="drop-down">
+                        <svg class="drop-down-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.175 7.1499L10 10.9749L13.825 7.1499L15 8.33324L10 13.3332L5 8.33324L6.175 7.1499Z"
+                                fill="#202020" />
+                        </svg>
+                    </div>
+                </li>
+                <ul class="about-menu">
+                    <a href="../qehs/qehs.html" class="about-menu-item">
+                        <li>
+                            <p>Q.E.H.S</p>
+                        </li>
+                    </a>
+                    <a href="../bod/bod.html" class="about-menu-item">
+                        <li>
+                            <p>Board Of Directors</p>
+                        </li>
+                    </a>
 
-            <ul class="nav-item">
-                <a href="#" class="nav-link">
-                    <li>
-                        <p>Order now</p>
-                    </li>
-                </a><a href="#" class="nav-link">
-                    <li>
-                        <p>About</p>
-                    </li>
-                </a><a href="../franchise/franchise.html" class="nav-link">
-                    <li>
-                        <p>Franchise</p>
-                    </li>
-                </a><a href="../outlets/outlets.html" class="nav-link">
-                    <li>
-                        <p>Outlets</p>
-                    </li>
-                </a><a href="../contact/contact.html" class="nav-link">
-                    <li>
-                        <p>Contact</p>
-                    </li>
-                </a><a href="#" class="nav-link">
-                    <li>
-                        <p>Cart</p>
-                    </li>
-                </a>
-            </ul>
+                    <a href="../management/management.html" class="about-menu-item">
+                        <li>
+                            <p>
+                                Management Profile
+                            </p>
+                        </li>
+                    </a>
+                </ul>
+            </div><a href="../franchise/franchise.html" class="nav-link">
+                <li>
+                    <p>Franchise</p>
+                </li>
+            </a><a href="../outlets/outlets.html" class="nav-link">
+                <li>
+                    <p>Outlets</p>
+                </li>
+            </a><a href="../contact/contact.html" class="nav-link">
+                <li>
+                    <p>Contact</p>
+                </li>
+            </a><a href="../cart/cart.html" class="nav-link">
+                <li>
+                    <p>Cart</p>
+                </li>
+            </a>
+        </ul>
 
-            <button class="nav-btn">
-                <p class="paragraph--2">Sign in</p>
-            </button>
-        </nav>
+        <button class="nav-btn">
+            <p class="paragraph--2">Sign in</p>
+        </button>
+    </nav>
         <div class="outlet-main-img">
         </div>
         <main class="outlet-hero">
@@ -468,7 +495,13 @@
             </ul>
         </div>
     </footer>
-    <script src="../outlets/outlets.js" async defer></script>
+    <script>
+        function toggleDropDown() {
+            const aboutMenu = document.querySelector(".about-menu")
+            aboutMenu.classList.toggle("opacity1")
+        }
+
+    </script>
 </body>
 
 </html>

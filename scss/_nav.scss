@@ -1,5 +1,6 @@
 @import "./mixins";
-.nav{
+
+.nav {
     display: flex;
     align-items: center;
     position: fixed;
@@ -11,24 +12,89 @@
     width: 100vw;
     justify-content: space-between;
 
-    .logo{
+    .logo {
         width: torem(94);
         height: 4.8rem;
     }
-    &-item{
+
+    &-item {
         display: flex;
         align-items: center;
+        position: relative;
 
-        .nav-link{
+        .nav-link {
             padding: 1rem;
+            cursor: pointer;
+            position: relative;
             margin-right: torem(12);
+
+            li {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .drop-down {
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 1.2rem;
+                }
+
+
+            }
+
         }
     }
 
-    .nav-btn{
+    .nav-btn {
         background-color: $primary-color;
         padding: 1.6rem 4.3rem;
         color: $white;
         border-radius: 8px;
     }
+}
+
+.about-menu {
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    border-radius: .8rem;
+    padding: 1rem;
+    width: 20rem;
+    flex-direction: column;
+    bottom: -16rem;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 25;
+    transition: opacity .2s ease-in;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+
+    &-item {
+        li {
+            border-bottom: 1px solid #E9E9E9;
+            margin-bottom: .5;
+            padding: 1rem;
+
+            &:hover{
+                background-color: #E9E9E9;
+                transition: background-color .3s ease-in-out;
+                border-radius: .3rem;
+            }
+            p {
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 1.6rem;
+                letter-spacing: 0em;
+                
+                text-align: left;
+
+            }
+        }
+    }
+}
+
+.opacity1{
+    opacity: 1;
+    visibility: visible;
 }
