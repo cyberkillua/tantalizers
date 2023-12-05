@@ -7,10 +7,18 @@
     background-size: contain;
     height: 44rem;
     background-image: url("../images/background4.png");
+
+    @include mobile{
+        height: convertToRem(300);
+    }
 }
 
 .management-content {
     padding: 8rem 9.7rem;
+    @include mobile{
+        // overflow-x: hidden;
+        padding: 4rem 2rem;
+    }
 
     .management-header {
         color: #202020;
@@ -20,6 +28,12 @@
         font-weight: 600;
         margin-bottom: 1.6rem;
         line-height: 5.4rem;
+
+        @include mobile{
+            font-size: 2.3rem;
+            margin-bottom: 1rem;
+            line-height: 2rem;
+        }
     }
 
     p {
@@ -29,7 +43,14 @@
         font-style: normal;
         font-weight: 500;
         margin-bottom: 6.4rem;
-        line-height: 3rem
+        line-height: 3rem;
+
+        @include mobile{
+            margin-bottom: 3rem;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            width: 100%;
+        }
     }
 
     .name {
@@ -61,13 +82,24 @@
         gap: 4rem;
         grid-template-columns: repeat(auto-fit, minmax(37.4rem, 1fr));
         .grid-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 37.4rem;
-
+         
+            @include mobile{
+                width: 80%;
+            }
             img {
                 width: 37.4rem;
                 height: 40rem;
                 border-radius: 100%;
                 flex-shrink: 0;
+
+                @include mobile{
+                    width: 24rem;
+                    height: 25rem;
+                }
             }
             
             .empty-image {
@@ -76,6 +108,11 @@
                 width: 37.4rem;
                 height: 40rem;
                 background: #757474;
+                @include mobile{
+                    width: 24rem;
+                    border-radius: 8rem;
+                    height: 25rem;
+                }
             }
         }
     }

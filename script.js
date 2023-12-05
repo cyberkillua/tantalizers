@@ -67,7 +67,6 @@ var mySwiper = new Swiper('.carousel', {
 
 
 
-
 carouselChildren.forEach(item => {
     const card = document.createElement('swiper-slide')
     card.classList.add("card")

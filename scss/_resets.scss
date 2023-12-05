@@ -7,6 +7,10 @@
     margin: 0;
     padding: 0;
     font-size: 0.6944vw;
+
+    @include mobile{
+        font-size: 2.66vw;
+    }
 }
 
 body {
@@ -26,10 +30,15 @@ p {
 
 h1 {
     font-family: 'Fredoka', sans-serif;
-    font-size: torem(96);
+    font-size: 9.6rem;
     font-weight: 400;
-    line-height: toRen(116);
+    line-height: torem(116);
     letter-spacing: 0em;
+
+    @include mobile{
+        font-size: convertToRem(96);
+        line-height: convertToRem(116);
+    }
 }
 
 
@@ -39,6 +48,10 @@ h2 {
     font-weight: 600;
     line-height: toRem(60);
     letter-spacing: 0em;
+
+    @include mobile{
+        font-size: 3rem;
+    }
 }
 
 h4 {
@@ -56,6 +69,10 @@ h4 {
     font-weight: 500;
     line-height: torem(30);
     letter-spacing: 0em;
+
+    @include mobile{
+        font-size: 1.5rem;
+    }
 }
 
 .paragraph--1 {
@@ -81,7 +98,6 @@ h4 {
     font-style: normal;
     font-weight: 500;
     line-height: 1.6rem;
-    /* 133.333% */
 }
 
 .subtitle--2 {
@@ -90,6 +106,11 @@ h4 {
     font-weight: 700;
     line-height: 3.6rem;
     letter-spacing: 0em;
+
+    @include mobile{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
 }
 
 .paragraph--5 {

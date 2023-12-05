@@ -2,3 +2,17 @@
     $remValue: (calc($value / 10)) + rem;
     @return $remValue;
 }
+
+@function convertToRem($value){
+    $remValue: floor((calc($value / 25.77)) * 100) /100 + rem;
+    @return $remValue;
+}
+
+@mixin mobile {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+// Define a custom function for math.floor
+
+  

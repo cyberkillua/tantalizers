@@ -7,12 +7,18 @@
     background-size: contain;
     height: 44rem;
     background-image: url("../images/background4.png");
+
+    @include mobile{
+        height: convertToRem(300);
+    }
 }
 
 
 .policy-content {
     padding: 8rem 38rem 8rem 9.2rem;
-
+    @include mobile{
+        padding: 4rem 2rem;
+    }
     .header {
         color: #202020;
         font-size: 3.2rem;
@@ -21,6 +27,12 @@
         margin-top: 3.2rem;
         margin-bottom: 1.6rem;
         line-height: 3.6rem;
+
+        @include mobile{
+            font-size: 2.3rem;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+        }
     }
 
     p {

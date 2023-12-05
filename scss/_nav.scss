@@ -8,19 +8,43 @@
     background-color: white;
     top: 0;
     left: 0;
-    padding: torem(16) torem(65);
+    overflow: hidden;
+    padding: 1.6rem 6.5rem;
     width: 100vw;
     justify-content: space-between;
+
+    @include mobile {
+        padding: convertToRem(16) convertToRem(65);
+    }
 
     .logo {
         width: torem(94);
         height: 4.8rem;
+
+        @include mobile {
+            width: 7rem;
+        }
     }
 
     &-item {
         display: flex;
         align-items: center;
         position: relative;
+
+        @include mobile {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            justify-content: center;
+            flex-direction: column-reverse;
+            width: 100vw;
+            transform: translateY(-110%);
+            height: 45vh;
+            transition: transform .5s ease-out;
+            background-color: white;
+        }
 
         .nav-link {
             padding: 1rem;
@@ -52,7 +76,55 @@
         padding: 1.6rem 4.3rem;
         color: $white;
         border-radius: 8px;
+
+        @include mobile {
+            display: none;
+        }
     }
+
+    .hamburger {
+        align-items: flex-end;
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        justify-content: space-between;
+        height: 1.7rem;
+        overflow: hidden;
+        transition: all .5s ease-out;
+        width: 2.5rem;
+        z-index: 2;
+
+        @include mobile {
+            display: flex;
+        }
+
+        &__line {
+            background-color: black;
+            height: .18rem;
+            transform-origin: center right;
+            transition: all .5s ease-out;
+            width: 100%;
+        }
+    }
+    
+.hamburger[data-open='true'] .hamburger_line--one {
+    transform: rotate(-45deg);
+    width: 2.7rem;
+  }
+  
+  .hamburger[data-open='true'] .hamburger_line--two {
+    transform: translate(8rem);
+  }
+  
+  .hamburger[data-open='true'] .hamburger_line--three {
+    max-width: 2.7rem;
+    transform: rotate(45deg);
+    width: 2.7rem;
+  }
+  
+  .hamburger[data-open='true'] .hamburger_line {
+    background-color: #7d8487;
+  }
 }
 
 .about-menu {
@@ -76,17 +148,18 @@
             margin-bottom: .5;
             padding: 1rem;
 
-            &:hover{
+            &:hover {
                 background-color: #E9E9E9;
                 transition: background-color .3s ease-in-out;
                 border-radius: .3rem;
             }
+
             p {
                 font-size: 1.6rem;
                 font-weight: 500;
                 line-height: 1.6rem;
                 letter-spacing: 0em;
-                
+
                 text-align: left;
 
             }
@@ -94,7 +167,7 @@
     }
 }
 
-.opacity1{
+.opacity1 {
     opacity: 1;
     visibility: visible;
 }

@@ -12,6 +12,12 @@
             padding: 4.8rem 0 4.8rem 9.6rem;
             display: flex;
             background: #300;
+            
+
+            @include mobile {
+                padding: 0;
+                background-color: transparent;
+            }
 
             .location-icon {
                 width: 4rem;
@@ -23,13 +29,16 @@
                 align-items: center;
                 margin-left: 2.4rem;
 
+
+                @include mobile {
+                    display: none;
+                    overflow-x: scroll;
+                    margin-right: 5rem;
+                }
+
                 .select {
                     margin-left: 1.6rem;
-                    display: flex;
                     width: 30rem;
-                    flex-direction: column;
-                    gap: .4rem;
-                    display: flex;
                     padding: .8rem 1.6rem;
                     align-items: center;
                     color: #202020;
@@ -38,6 +47,11 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: 2.4rem;
+
+                    @include mobile {
+                        width: 50rem;
+                        padding: .4rem 1.6rem;
+                    }
 
                     .hero-option {
                         font-size: 1.8rem;
@@ -60,6 +74,10 @@
                     padding: .8rem 1.6rem;
                     align-items: center;
 
+                    @include mobile {
+                        padding: .8rem 1.6rem;
+                    }
+
                     .search-icon {
                         width: 2.4rem;
                         height: 2.4rem;
@@ -77,6 +95,10 @@
                         border: none;
                         line-height: 2.4rem;
                         margin-left: .8rem;
+
+                        @include mobile {
+                            width: 15.5rem;
+                        }
 
                         &:focus {
                             outline: none;
@@ -99,6 +121,9 @@
                 align-items: center;
                 padding: 1.2rem 2.4rem;
 
+                @include mobile{
+                    width: 12rem;
+                }
                 &:hover {
                     cursor: pointer;
                 }
@@ -115,6 +140,10 @@
                 background-color: #fff;
                 height: 100vh;
                 top: 8rem;
+
+                @include mobile {
+                    display: none;
+                }
 
                 ul {
                     li {
@@ -138,6 +167,14 @@
                 padding: 8rem 0 8rem 9.6rem;
                 width: 100%;
 
+                @include mobile {
+                    // border: 10px solid red;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5rem;
+                    padding: 3rem 2rem;
+                }
+
                 .section-header {
                     color: #202020;
                     font-family: 'Fredoka', sans-serif;
@@ -146,10 +183,15 @@
                     font-weight: 600;
                     margin-bottom: 4rem;
                     line-height: 5.4rem;
-                    /* 112.5% */
+
+                    @include mobile {
+                        font-size: 2.8rem;
+                        margin-bottom: 1.5rem;
+                    }
                 }
 
                 .order-section-grid {
+                    // border: 10px solid grey;
                     width: 100%;
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(32.4rem, 1fr));
@@ -295,15 +337,24 @@
         height: 100vh;
         background-color: #FFF;
 
+        @include mobile {
+            width: 100vw;
+        }
+
         &-top {
             display: flex;
             padding: 2.4rem 4.0rem 4.8rem 4rem;
             flex-direction: column;
             overflow: scroll;
 
-            &::-webkit-scrollbar{
+            @include mobile {
+                padding: 1.5rem 2rem;
+            }
+
+            &::-webkit-scrollbar {
                 display: none;
             }
+
             .carts-close-btn {
                 display: flex;
                 padding: .8rem;
@@ -381,7 +432,7 @@
                         line-height: 2.0rem;
                     }
                 }
-                
+
                 .close-icon {
                     width: 1.6rem;
                     display: flex;
@@ -395,7 +446,7 @@
         .carts-footer {
             width: 100%;
             padding: 3.2rem 4rem 4.8rem 4rem;
-            border-top: 1px solid  #E9E9E9;
+            border-top: 1px solid #E9E9E9;
             background: #FFF;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
 
@@ -449,12 +500,20 @@
                     border: 1px solid #F00;
                     background: #F00;
 
+                    @include mobile {
+                        padding: .8rem 1rem;
+                    }
+
                     p {
                         color: #FFF;
                         font-size: 1.6rem;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 1.6rem;
+
+                        @include mobile {
+                            font-size: 1.2rem;
+                        }
                     }
                 }
 

@@ -1,9 +1,12 @@
 @import "../scss/main";
 
-.mycart{
+.mycart {
     .mycart-body {
         padding-top: 8.5rem;
-    
+        @include mobile{
+            padding-top: 7rem;
+        }
+
         .mycart-header {
             display: flex;
             height: 16.2rem;
@@ -14,7 +17,11 @@
             color: white;
             padding: 3.2rem 0;
             align-items: center;
-    
+
+            @include mobile {
+                padding: 2.8rem 0;
+            }
+
             .top {
                 display: flex;
                 padding: .8rem 1.6rem;
@@ -25,22 +32,38 @@
                 border-radius: .8rem;
                 border: 1px solid #E9E9E9;
                 background: #FFF;
-    
+
+                @include mobile {
+                    overflow-x: scroll;
+                    width: 23rem;
+                    gap: .3rem;
+                }
+
                 h3 {
                     color: #202020;
                     font-size: 1.8rem;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 2.4rem;
-                    /* 133.333% */
+
+                    @include mobile {
+                        font-size: 1.2rem;
+                    }
                 }
             }
-    
+
             .bottom {
                 display: flex;
                 gap: 2rem;
                 align-items: center;
-    
+
+                @include mobile {
+                    padding: 1rem;
+                    width: 100%;
+                    gap: .5rem;
+                    overflow-x: scroll;
+                }
+
                 .step {
                     display: flex;
                     padding: .8rem 2.4rem;
@@ -48,49 +71,74 @@
                     border-radius: 4.8rem;
                     border: 1px solid #E2E2E2;
                     background: #FFF;
-    
+
+                    @include mobile {
+                        padding: .5rem 1rem;
+                        width: 20rem;
+                    }
+
                     p {
                         color: #202020;
                         font-size: 1.4rem;
                         font-style: normal;
                         font-weight: 500;
                         line-height: 1.4rem;
+
+                        @include mobile {
+                            text-wrap: nowrap;
+                            line-height: 1rem;
+                            font-size: 1rem;
+                        }
                     }
                 }
-    
+
                 .arrow-icon {
                     width: 8rem;
+
+                    @include mobile {
+                        width: convertToRem(80);
+                    }
                 }
-    
+
                 .active {
                     border: 1px solid #A00;
                     background: #A00;
-    
+
                     p {
                         color: #FFF;
                     }
                 }
             }
         }
-    
+
         .content-container {
             width: 100%;
             padding: 8rem 9.6rem;
             display: flex;
             flex-direction: column;
-    
+
+            @include mobile {
+                padding: convertToRem(80) 1rem;
+            }
+
             .table-wrapper {
                 padding: 0 5.4rem;
-    
+
+                @include mobile {
+                    padding: 0 0;
+                }
+
+
                 .mycart-item {
                     border-collapse: collapse;
-    
                     width: 100%;
-    
+
+                    @include mobile {}
+
                     thead {
-    
+
                         tr {
-    
+
                             th {
                                 p {
                                     text-align: center;
@@ -101,27 +149,42 @@
                                     margin-bottom: 1.6rem;
                                     font-weight: 600;
                                     line-height: 2.8rem;
+
+                                    @include mobile {
+                                        font-size: 1.2rem;
+                                        margin-bottom: .8rem;
+                                        line-height: 1.2rem;
+                                    }
                                 }
                             }
                         }
                     }
-    
+
                     tbody {
                         tr {
                             td {
                                 padding-bottom: 3rem;
-    
+
                                 .product {
                                     display: flex;
                                     align-items: center;
                                     gap: 2.4rem;
-    
+
+                                    @include mobile {
+                                        gap: 1.2rem;
+                                    }
+
                                     .product-img {
                                         width: 14.1rem;
                                         height: 10rem;
                                         border-radius: 1.6rem;
+
+                                        @include mobile {
+                                            width: convertToRem(141);
+                                            height: convertToRem(100);
+                                        }
                                     }
-    
+
                                     .product-content {
                                         p {
                                             width: 28.2rem;
@@ -131,18 +194,31 @@
                                             font-weight: 500;
                                             margin-bottom: 1.6rem;
                                             line-height: 3.0rem;
+
+                                            @include mobile {
+                                                font-size: 1rem;
+                                                width: convertToRem(282);
+                                                line-height: 2.4rem;
+                                                margin-bottom: convertToRem(18);
+                                            }
                                         }
-    
+
                                         .price {
                                             color: #202020;
                                             font-size: 1.8rem;
                                             font-style: normal;
                                             font-weight: 500;
                                             line-height: 2.4rem;
+
+                                            @include mobile {
+                                                font-size: 1rem;
+                                                line-height: 1.5rem;
+                                            }
+
                                         }
                                     }
                                 }
-    
+
                                 .quantity {
                                     display: flex;
                                     width: 10.9rem;
@@ -151,7 +227,12 @@
                                     align-items: center;
                                     border-radius: .4rem;
                                     border: 1px solid #E2E2E2;
-    
+
+                                    @include mobile {
+                                        width: convertToRem(109);
+                                        padding: .8rem .5rem;
+                                    }
+
                                     .increase,
                                     .decrease {
                                         display: flex;
@@ -159,36 +240,58 @@
                                         width: 2.4rem;
                                         height: 2.4rem;
                                         flex-shrink: 0;
+
+                                        @include mobile {
+                                            width: convertToRem(24);
+                                            height: convertToRem(24);
+                                        }
                                     }
-    
+
                                     span {
                                         color: #202020;
                                         font-size: 2.2rem;
                                         font-style: normal;
                                         font-weight: 500;
                                         line-height: 3rem;
-                                        /* 136.364% */
+
+                                        @include mobile {
+                                            font-size: 1rem;
+                                        }
                                     }
-    
+
                                 }
-    
+
                                 .total {
                                     width: fit-content;
                                     display: flex;
                                     align-items: center;
                                     gap: 4.6rem;
-    
+
+                                    @include mobile {
+                                        gap: 1rem;
+                                    }
+
                                     .amount {
                                         color: #202020;
                                         font-size: 2.2rem;
                                         font-style: normal;
                                         font-weight: 700;
                                         line-height: 3rem;
+
+                                        @include mobile {
+                                            font-size: 1rem;
+                                            line-height: 2rem;
+                                        }
                                     }
-    
+
                                     .close-icon {
                                         width: 2.4rem;
                                         height: 2.4rem;
+
+                                        @include mobile {
+                                            width: convertToRem(24);
+                                            height: convertToRem(24);
+                                        }
                                     }
                                 }
                             }
@@ -196,16 +299,20 @@
                     }
                 }
             }
-    
+
             .total {
                 width: 38rem;
                 align-self: flex-end;
-    
+
+                @include mobile {
+                    width: convertToRem(380);
+                }
+
                 .top {
                     margin-bottom: .8rem;
                     display: flex;
                     justify-content: space-between;
-    
+
                     p {
                         color: #202020;
                         font-size: 1.4rem;
@@ -213,7 +320,7 @@
                         font-weight: 500;
                         line-height: 2.0rem;
                     }
-    
+
                     .amount {
                         color: #202020;
                         text-align: right;
@@ -222,10 +329,14 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: 2.4rem;
+
+                        @include mobile {
+                            font-size: 1.2rem;
+                        }
                     }
-    
+
                 }
-    
+
                 .vat {
                     color: #202020;
                     font-size: 1.2rem;
@@ -234,7 +345,7 @@
                     line-height: 1.6rem;
                 }
             }
-    
+
             .checkout {
                 align-self: flex-end;
                 padding: 1.2rem 3.2rem;
@@ -243,20 +354,29 @@
                 border: 1px solid #F00;
                 background: #F00;
                 margin-top: 3.9rem;
-    
+
+                @include mobile {
+                    margin-top: 2rem;
+                    padding: .8rem 1.7rem;
+                }
+
                 p {
                     color: #FFF;
                     font-size: 1.6rem;
                     font-style: normal;
                     font-weight: 700;
                     line-height: 1.6rem;
-    
+
+                    @include mobile {
+                        font-size: .8rem;
+                    }
+
                 }
             }
-    
+
             .tantalize-section {
                 margin-top: 6.4rem;
-    
+
                 .section-header {
                     color: #202020;
                     font-family: 'Fredoka', sans-serif;
@@ -265,29 +385,39 @@
                     font-weight: 600;
                     margin-bottom: 4rem;
                     line-height: 5.4rem;
-                    /* 112.5% */
+
+                    @include mobile {
+                        font-size: 2.2rem;
+                    }
                 }
-    
+
                 .order-section-grid {
                     width: 100%;
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(32.4rem, 1fr));
                     row-gap: 4rem;
-    
+
+                    @include mobile {}
+
                     .grid-item {
                         width: fit-content;
                         border: 1px solid #E2E2E2;
                         border-radius: .8rem .8rem 0px 0px;
-    
+
+                        @include mobile {
+                            justify-self: center;
+                        }
+
                         &-image {
                             width: 32.4rem;
                             height: 23.0rem;
                             border-radius: .8rem .8rem 0px 0px;
+
                         }
-    
+
                         &-bottom {
                             padding: 1.2rem;
-    
+
                             p {
                                 width: 30rem;
                                 height: 6rem;
@@ -301,7 +431,7 @@
                                 line-height: 3.0rem;
                                 /* 136.364% */
                             }
-    
+
                             .price {
                                 color: rgba(32, 32, 32, 0.70);
                                 font-size: 1.8rem;
@@ -312,12 +442,12 @@
                                 line-height: 2.4rem;
                                 /* 133.333% */
                             }
-    
+
                             .last {
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-    
+
                                 .quantity {
                                     display: flex;
                                     width: 10.9rem;
@@ -326,7 +456,7 @@
                                     align-items: center;
                                     border-radius: .4rem;
                                     border: 1px solid #E2E2E2;
-    
+
                                     .increase,
                                     .decrease {
                                         display: flex;
@@ -335,7 +465,7 @@
                                         height: 2.4rem;
                                         flex-shrink: 0;
                                     }
-    
+
                                     span {
                                         color: #202020;
                                         font-size: 2.2rem;
@@ -344,7 +474,7 @@
                                         line-height: 3rem;
                                         /* 136.364% */
                                     }
-    
+
                                     .add-to-card {
                                         display: flex;
                                         align-items: center;
@@ -357,14 +487,14 @@
                         }
                     }
                 }
-    
+
                 .see-more-btn {
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     margin-top: 4rem;
-    
+
                     .see-more {
                         display: flex;
                         width: 26.1rem;
@@ -375,7 +505,7 @@
                         border-radius: .8rem;
                         border: 1px solid #FFE6E6;
                         background: #FFE6E6;
-    
+
                         p {
                             color: #300;
                             font-size: 1.6rem;
@@ -387,11 +517,11 @@
                 }
             }
         }
-    
-    
+
+
     }
 }
 
-.visible{
+.visible {
     visibility: visible;
 }

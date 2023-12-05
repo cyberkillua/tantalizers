@@ -1,9 +1,7 @@
 @import "./scss/main";
 
-
 .hero {
     width: 100vw;
-    // height: 100vh;
     background-image: url("../images/Background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,10 +11,20 @@
     padding-top: torem(250);
     padding-bottom: torem(48);
 
+    @include mobile {
+        padding-top: convertToRem(250);
+        padding-bottom: convertToRem(48);
+
+    }
+
     .header {
         font-weight: 700;
-        width: torem(680);
+        width: 68rem;
         text-align: center;
+
+        @include mobile {
+            width: convertToRem(680);
+        }
     }
 
     .hero-content {
@@ -28,6 +36,11 @@
         border: 1px solid rgba(255, 255, 255, 0.90);
         background: rgba(255, 255, 255, 0.30);
 
+        @include mobile {
+            width: 30rem;
+            height: 23rem;
+        }
+
         .bar {
             display: flex;
             align-items: center;
@@ -36,6 +49,13 @@
             padding: 0.9rem 1.6rem;
             justify-content: space-between;
             background: #E2E2E2;
+
+            @include mobile {
+                border-radius: convertToRem(100);
+                height: 5rem;
+                padding: 0.7rem 1rem;
+
+            }
 
             .restaurant {
                 border-radius: torem(56);
@@ -50,6 +70,11 @@
                 justify-content: center;
                 align-items: center;
                 gap: .8rem;
+
+                @include mobile {
+                    width: 14rem;
+                    padding: 0 0;
+                }
             }
         }
 
@@ -63,8 +88,6 @@
                 display: flex;
                 width: torem(440);
                 height: 5rem;
-                // display: flex;
-                // align-items: center;
                 font-family: inherit;
                 padding: 1rem;
                 color: #8D8D8D;
@@ -74,12 +97,23 @@
                 line-height: 2.4rem;
                 gap: torem(4);
 
+                @include mobile {
+                    width: 100%;
+                    font-size: 1.2rem;
+                    padding: .7rem;
+                    height: 3.5rem;
+                }
+
                 .hero-option {
                     color: #8D8D8D;
                     font-size: 1.8rem;
                     font-style: normal;
                     font-weight: 700;
                     line-height: 2.4rem;
+
+                    @include mobile {
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
@@ -89,6 +123,10 @@
 .info {
     padding: 9.6rem;
 
+    @include mobile {
+        padding: convertToRem(96);
+    }
+
     &-top {
         &-header {
             margin-bottom: 4rem;
@@ -96,14 +134,20 @@
 
         .carousel {
             margin-bottom: 9.6rem;
+
             .card {
                 margin-right: 3.7rem;
-             
+
                 .carousel-image {
                     width: 22rem;
                     height: 18rem;
                     border-radius: 1.6rem;
                     margin-bottom: torem(16);
+
+                    @include mobile {
+                        width: 15rem;
+                        height: 10rem;
+                    }
                 }
 
                 .card-bottom {
@@ -111,6 +155,10 @@
                     flex-direction: column;
                     gap: .8rem;
                     width: 22rem;
+
+                    @include mobile{
+                        width: 17rem;
+                    }
 
                     .food-name {
                         text-align: center;
@@ -126,7 +174,6 @@
 
             .swiper-pagination {
                 // position: relative;
-                border: 1px solid red;
                 position: fixed;
                 // bottom: 0;
                 width: 100%;
@@ -140,6 +187,11 @@
     &-bottom {
         &-header {
             margin-bottom: 4rem;
+
+            @include mobile {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
         }
 
         &-content {
@@ -147,15 +199,29 @@
             width: 100%;
             justify-content: space-between;
 
+            @include mobile {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
             .instructions {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 3.2rem;
 
+                @include mobile {
+                    gap: 1.2rem;
+                }
+
                 &-icon {
                     width: 15rem;
                     height: 15rem;
+
+                    @include mobile {
+                        width: 10rem;
+                        height: 10rem;
+                    }
                 }
 
                 p {
@@ -174,6 +240,11 @@
     width: 100vw;
     padding: 22rem 0 17rem 9.6rem;
     background-size: cover;
+
+    @include mobile {
+        padding: 5rem 0 10rem 5rem;
+    }
+
     &-content {
         width: fit-content;
         color: white;
@@ -190,12 +261,17 @@
             display: flex;
             gap: 1.3rem;
 
+
             .ad-btn {
                 background-color: #FFF;
                 padding: 1.2rem 3.2rem;
                 border-radius: 8px;
                 border: 1px solid #E2E2E2;
-               
+
+                @include mobile {
+                    padding: 1rem 2.2rem;
+                }
+
             }
         }
     }

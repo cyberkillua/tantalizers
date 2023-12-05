@@ -23,7 +23,7 @@
                         <p>Order now</p>
                     </li>
                 </a>
-                <div href="#" class="nav-link">
+                <div class="nav-link">
                     <li onclick="toggleDropDown()">
                         <p>About</p>
                         <div class="drop-down">
@@ -77,6 +77,12 @@
             <button class="nav-btn">
                 <p class="paragraph--2">Sign in</p>
             </button>
+
+            <div class="hamburger" data-open="false" onclick="toggleNav()">
+                <div class="hamburger__line hamburger_line--one"></div>
+                <div class="hamburger__line hamburger_line--two"></div>
+                <div class="hamburger__line hamburger_line--three"></div>
+            </div>
         </nav>
         <div class="career-hero">
 
@@ -347,12 +353,22 @@
             fileNameDisplay.textContent = fileInput.files.length > 0 ? fileInput.files[0].name : 'No file chosen';
         }
     </script>
-     <script>
+    <script>
         function toggleDropDown() {
             const aboutMenu = document.querySelector(".about-menu")
             aboutMenu.classList.toggle("opacity1")
         }
-
+        function toggleNav() {
+            const dataOpen = document.querySelector(".hamburger")
+            const navItem = document.querySelector(".nav-item")
+            if (dataOpen.getAttribute("data-open") == "false") {
+                dataOpen.setAttribute("data-open", "true")
+                navItem.style.transform = "translateY(0)"
+            } else {
+                dataOpen.setAttribute("data-open", "false")
+                navItem.style.transform = "translateY(-110%)"
+            }
+        }
     </script>
 </body>
 

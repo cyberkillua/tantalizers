@@ -1,7 +1,14 @@
+@import "../scss/mixins";
+
 .footer {
     display: flex;
     padding: 6.4rem 9.6rem;
     justify-content: space-between;
+
+    @include mobile {
+        flex-direction: column;
+        padding: convertToRem(64) convertToRem(96);
+    }
 
     .col-1 {
         .footer-logo {
@@ -12,12 +19,20 @@
         ul {
             .footer-item {
                 margin-top: 2.4rem;
+
+                @include mobile {
+                    margin-top: convertToRem(17);
+                }
             }
 
             .social-item {
                 margin-top: 1.6rem;
                 display: flex;
                 gap: 2rem;
+
+                @include mobile {
+                    margin-top: convertToRem(16);
+                }
             }
         }
     }
@@ -25,6 +40,11 @@
     .col-2 {
         .footer-header {
             margin-bottom: 2.3rem;
+
+            @include mobile {
+                margin-bottom: convertToRem(23);
+                margin-top: convertToRem(50);
+            }
         }
 
         .col-2-item {
@@ -35,12 +55,24 @@
 
         .col-2-link {
             padding: 1rem 1rem 1rem 0;
+
+            @include mobile {
+                padding: convertToRem(1) .7rem .7rem 0;
+            }
         }
     }
 
     .col-3 {
+        @include mobile {
+            margin-top: 2rem;
+        }
+
         .footer-header {
             margin-bottom: 2.3rem;
+
+            @include mobile {
+                margin-bottom: convertToRem(23);
+            }
         }
 
         li {
@@ -49,10 +81,20 @@
             align-items: center;
             gap: 1.6rem;
 
+            @include mobile {
+                margin-bottom: 1rem;
+                gap: 1rem;
+            }
+
             .icon {
-                svg{
+                svg {
                     width: 2rem;
                     height: 2rem;
+
+                    @include mobile {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
                 }
             }
         }

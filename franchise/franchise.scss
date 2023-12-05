@@ -7,10 +7,18 @@
     background-size: contain;
     height: 44rem;
     background-image: url("../images/background4.png");
+    @include mobile{
+        height: convertToRem(340);
+        margin-top: 6.8rem;
+    }
 }
 
 .franchise-content {
     padding: 8rem 9.2rem;
+
+    @include mobile{
+        padding: 2rem;
+    }
 
     .franchise-h {
         color: #202020;
@@ -19,6 +27,11 @@
         font-weight: 600;
         line-height: 5.4rem;
         margin-bottom: 1.6rem;
+
+        @include mobile{
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
     }
 
     .franchise-p {
@@ -27,12 +40,22 @@
         font-style: normal;
         font-weight: 500;
         line-height: 3rem;
+        @include mobile{
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
     }
 
     .franchise-wrapper {
         margin-top: 4.8rem;
         display: flex;
         justify-content: space-between;
+
+        @include mobile{
+            margin-top: 2.5rem;
+            flex-direction: column;
+            gap: 3rem;
+        }
 
         &-left {
             display: flex;
@@ -41,6 +64,9 @@
             .content-left-top {
                 width: 50.4rem;
 
+                @include mobile{
+                    width: 100%;
+                }
                 &-h {
                     color: #202020;
                     font-size: 3.2rem;
@@ -48,6 +74,11 @@
                     font-weight: 600;
                     line-height: 3.6rem;
                     margin-bottom: 1.6rem;
+                    @include mobile{
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        margin-bottom: 1.5rem;
+                    }
                 }
 
                 p {
@@ -58,6 +89,10 @@
                     font-weight: 500;
                     line-height: 2.4rem;
                     margin-bottom: 1.6rem;
+                    @include mobile{
+                        font-size: 1.4rem;
+                        line-height: 1.8rem;
+                    }
                 }
                 ul{
                     list-style: disc;
@@ -71,6 +106,9 @@
             .content-left-bottom {
                 margin-top: 3.2rem;
                 width: 50.4rem;
+                @include mobile{
+                    width: 100%;
+                }
 
                 &-h {
                     color: #202020;
@@ -79,6 +117,12 @@
                     font-weight: 600;
                     line-height: 3.6rem;
                     margin-bottom: 1.6rem;
+
+                    @include mobile{
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        margin-bottom: 1.5rem;
+                    }
                 }
 
                 p {
@@ -89,6 +133,12 @@
                     font-weight: 500;
                     line-height: 2.4rem;
                     margin-bottom: 1.6rem;
+
+                    @include mobile{
+                        font-size: 1.4rem;
+                        margin-bottom: 1rem;
+                        line-height: 2rem;
+                    }
                 }
             }
         }
@@ -100,10 +150,14 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 2.4rem;
-            border: 1px solid red;
             border-radius: 8px;
             border: 1px solid #E9E9E9;
             background: #FFF;
+
+            @include mobile{
+                width: 100%;
+                padding: 1.5rem;
+            }
     
             .content-header {
                 color: #202020;
@@ -122,6 +176,12 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 2.4rem;
+
+                @include mobile{
+                    width: 100%;
+                    line-height: 1.2rem;
+                    font-size: 1.2rem;
+                }
             }
     
             .form-group {

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <  <nav class="nav">
+    <nav class="nav">
         <a href="../index.html">
             <img class="logo" src="../images/logo.svg" alt="logo">
         </a>
@@ -22,7 +22,7 @@
                     <p>Order now</p>
                 </li>
             </a>
-            <div href="#" class="nav-link">
+            <div class="nav-link">
                 <li onclick="toggleDropDown()">
                     <p>About</p>
                     <div class="drop-down">
@@ -76,25 +76,32 @@
         <button class="nav-btn">
             <p class="paragraph--2">Sign in</p>
         </button>
-    </nav>
-        <div class="outlet-main-img">
+
+        <div class="hamburger" data-open="false" onclick="toggleNav()">
+            <div class="hamburger__line hamburger_line--one"></div>
+            <div class="hamburger__line hamburger_line--two"></div>
+            <div class="hamburger__line hamburger_line--three"></div>
         </div>
-        <main class="outlet-hero">
-            <h3 class="outlet-hero-h">Outlets</h3>
-            <p class="outlet-hero-p">Below are a list of all our outlets across Nigeria. Check them out to see the
-                one closet to you.</p>
-            <div class="outlet-hero-content">
-                <div class="filter">
-                    <button class="filter-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M17.9858 5.42409C14.0075 4.97945 9.99207 4.97945 6.01379 5.42409C5.9528 5.43108 5.89481 5.45431 5.84586 5.49136C5.79691 5.52841 5.7588 5.57792 5.7355 5.63472C5.71221 5.69152 5.70459 5.75353 5.71344 5.81428C5.72228 5.87503 5.74727 5.93229 5.78579 5.98009L9.30279 10.3281C10.5626 11.8855 11.2498 13.828 11.2498 15.8311V18.7201L12.7498 19.8201V15.8301C12.75 13.8273 13.4372 11.8852 14.6968 10.3281L18.2138 5.98009C18.2523 5.93229 18.2773 5.87503 18.2861 5.81428C18.295 5.75353 18.2874 5.69152 18.2641 5.63472C18.2408 5.57792 18.2027 5.52841 18.1537 5.49136C18.1048 5.45431 18.0468 5.43108 17.9858 5.42409ZM5.84779 3.93309C9.93673 3.47608 14.0639 3.47608 18.1528 3.93309C19.5988 4.09509 20.2958 5.79109 19.3808 6.92309L15.8628 11.2711C14.819 12.5616 14.2496 14.1713 14.2498 15.8311V21.3001C14.2499 21.4388 14.2115 21.5748 14.139 21.693C14.0664 21.8112 13.9625 21.907 13.8388 21.9697C13.7151 22.0323 13.5764 22.0595 13.4382 22.0481C13.2999 22.0367 13.1676 21.9872 13.0558 21.9051L10.0558 19.7051C9.96086 19.6354 9.88369 19.5442 9.83053 19.4391C9.77736 19.334 9.74971 19.2179 9.74979 19.1001V15.8301C9.74979 14.1701 9.17979 12.5611 8.13679 11.2701L4.61979 6.92409C3.70379 5.79209 4.39979 4.09509 5.84779 3.93309Z"
-                                fill="#202020" />
-                        </svg>
-                        <p class="filter-btn-p">Filter by state</p>
-                    </button>
-                </div>
-                <table class="outlet-hero-content-table">
+    </nav>
+    <div class="outlet-main-img">
+    </div>
+    <main class="outlet-hero">
+        <h3 class="outlet-hero-h">Outlets</h3>
+        <p class="outlet-hero-p">Below are a list of all our outlets across Nigeria. Check them out to see the
+            one closet to you.</p>
+        <div class="outlet-hero-content">
+            <div class="filter">
+                <button class="filter-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.9858 5.42409C14.0075 4.97945 9.99207 4.97945 6.01379 5.42409C5.9528 5.43108 5.89481 5.45431 5.84586 5.49136C5.79691 5.52841 5.7588 5.57792 5.7355 5.63472C5.71221 5.69152 5.70459 5.75353 5.71344 5.81428C5.72228 5.87503 5.74727 5.93229 5.78579 5.98009L9.30279 10.3281C10.5626 11.8855 11.2498 13.828 11.2498 15.8311V18.7201L12.7498 19.8201V15.8301C12.75 13.8273 13.4372 11.8852 14.6968 10.3281L18.2138 5.98009C18.2523 5.93229 18.2773 5.87503 18.2861 5.81428C18.295 5.75353 18.2874 5.69152 18.2641 5.63472C18.2408 5.57792 18.2027 5.52841 18.1537 5.49136C18.1048 5.45431 18.0468 5.43108 17.9858 5.42409ZM5.84779 3.93309C9.93673 3.47608 14.0639 3.47608 18.1528 3.93309C19.5988 4.09509 20.2958 5.79109 19.3808 6.92309L15.8628 11.2711C14.819 12.5616 14.2496 14.1713 14.2498 15.8311V21.3001C14.2499 21.4388 14.2115 21.5748 14.139 21.693C14.0664 21.8112 13.9625 21.907 13.8388 21.9697C13.7151 22.0323 13.5764 22.0595 13.4382 22.0481C13.2999 22.0367 13.1676 21.9872 13.0558 21.9051L10.0558 19.7051C9.96086 19.6354 9.88369 19.5442 9.83053 19.4391C9.77736 19.334 9.74971 19.2179 9.74979 19.1001V15.8301C9.74979 14.1701 9.17979 12.5611 8.13679 11.2701L4.61979 6.92409C3.70379 5.79209 4.39979 4.09509 5.84779 3.93309Z"
+                            fill="#202020" />
+                    </svg>
+                    <p class="filter-btn-p">Filter by state</p>
+                </button>
+            </div>
+            <div class="outlet-hero-content-wrapper">
+                <table class="outlet-hero-content-wrapper-table">
                     <thead>
                         <tr>
                             <th>
@@ -255,80 +262,82 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="outlet-hero-content-buttom">
-                    <div class="dropdown">
-                        <label for="rowsPerPage">Rows per page:</label>
-                        <input type="number" id="rowsPerPage" min="1" max="15" value="10">
-                    </div>
-                    <ul class="pagination" id="pagination">
+            </div>
+
+            <div class="outlet-hero-content-buttom">
+                <div class="dropdown">
+                    <label for="rowsPerPage">Rows per page:</label>
+                    <input type="number" id="rowsPerPage" min="1" max="15" value="10">
+                </div>
+                <ul class="pagination" id="pagination">
+                    <li>
+                        <button class="pagination-btn">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.705 8.29L5.415 6L7.705 3.705L7 3L4 6L7 9L7.705 8.29Z" fill="#202020" />
+                            </svg>
+                        </button>
+                    </li>
+                    <ul>
+
                         <li>
                             <button class="pagination-btn">
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.705 8.29L5.415 6L7.705 3.705L7 3L4 6L7 9L7.705 8.29Z" fill="#202020" />
-                                </svg>
+                                <p class="pagination-btn-p">1</p>
                             </button>
                         </li>
-                        <ul>
 
-                            <li>
-                                <button class="pagination-btn">
-                                    <p class="pagination-btn-p">1</p>
-                                </button>
-                            </li>
-
-
-                            <li>
-                                <button class="pagination-btn">
-                                    <p class="pagination-btn-p">2</p>
-                                </button>
-                            </li>
-
-                            <li>
-                                <button class="pagination-btn">
-                                    <p class="pagination-btn-p">3</p>
-                                </button>
-                            </li>
-
-                            <li>
-                                <button class="pagination-btn">
-                                    <p class="pagination-btn-p">4</p>
-                                </button>
-                            </li>
-
-                            <li>
-                                <button class="pagination-btn">
-                                    <svg width="10" height="3" viewBox="0 0 10 3" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.656 2.144C1.188 2.144 0.792 1.76 0.792 1.304C0.792 0.836 1.188 0.452 1.656 0.452C2.112 0.452 2.508 0.836 2.508 1.304C2.508 1.76 2.112 2.144 1.656 2.144ZM4.97241 2.144C4.50441 2.144 4.10841 1.76 4.10841 1.304C4.10841 0.836 4.50441 0.452 4.97241 0.452C5.42841 0.452 5.82441 0.836 5.82441 1.304C5.82441 1.76 5.42841 2.144 4.97241 2.144ZM8.28881 2.144C7.82081 2.144 7.42481 1.76 7.42481 1.304C7.42481 0.836 7.82081 0.452 8.28881 0.452C8.74481 0.452 9.14081 0.836 9.14081 1.304C9.14081 1.76 8.74481 2.144 8.28881 2.144Z"
-                                            fill="#202020" />
-                                    </svg>
-                                </button>
-                            </li>
-
-                            <li>
-                                <button class="pagination-btn">
-                                    <p class="pagination-btn-p">10</p>
-                                </button>
-                            </li>
-    
-                        </ul>
 
                         <li>
                             <button class="pagination-btn">
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                <p class="pagination-btn-p">2</p>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="pagination-btn">
+                                <p class="pagination-btn-p">3</p>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="pagination-btn">
+                                <p class="pagination-btn-p">4</p>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="pagination-btn">
+                                <svg width="10" height="3" viewBox="0 0 10 3" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M4.29492 8.29L6.58492 6L4.29492 3.705L4.99992 3L7.99992 6L4.99992 9L4.29492 8.29Z"
+                                        d="M1.656 2.144C1.188 2.144 0.792 1.76 0.792 1.304C0.792 0.836 1.188 0.452 1.656 0.452C2.112 0.452 2.508 0.836 2.508 1.304C2.508 1.76 2.112 2.144 1.656 2.144ZM4.97241 2.144C4.50441 2.144 4.10841 1.76 4.10841 1.304C4.10841 0.836 4.50441 0.452 4.97241 0.452C5.42841 0.452 5.82441 0.836 5.82441 1.304C5.82441 1.76 5.42841 2.144 4.97241 2.144ZM8.28881 2.144C7.82081 2.144 7.42481 1.76 7.42481 1.304C7.42481 0.836 7.82081 0.452 8.28881 0.452C8.74481 0.452 9.14081 0.836 9.14081 1.304C9.14081 1.76 8.74481 2.144 8.28881 2.144Z"
                                         fill="#202020" />
                                 </svg>
                             </button>
                         </li>
+
+                        <li>
+                            <button class="pagination-btn">
+                                <p class="pagination-btn-p">10</p>
+                            </button>
+                        </li>
+
                     </ul>
-                </div>
+
+                    <li>
+                        <button class="pagination-btn">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.29492 8.29L6.58492 6L4.29492 3.705L4.99992 3L7.99992 6L4.99992 9L4.29492 8.29Z"
+                                    fill="#202020" />
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
             </div>
-        </main>
+        </div>
+    </main>
     </section>
     <footer class="footer">
         <div class="col-1">
@@ -500,7 +509,17 @@
             const aboutMenu = document.querySelector(".about-menu")
             aboutMenu.classList.toggle("opacity1")
         }
-
+        function toggleNav() {
+            const dataOpen = document.querySelector(".hamburger")
+            const navItem = document.querySelector(".nav-item")
+            if (dataOpen.getAttribute("data-open") == "false") {
+                dataOpen.setAttribute("data-open", "true")
+                navItem.style.transform = "translateY(0)"
+            } else {
+                dataOpen.setAttribute("data-open", "false")
+                navItem.style.transform = "translateY(-110%)"
+            }
+        }
     </script>
 </body>
 

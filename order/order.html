@@ -18,7 +18,7 @@
             <a href="../index.html">
                 <img class="logo" src="../images/logo.svg" alt="logo">
             </a>
-
+    
             <ul class="nav-item">
                 <a href="../order/order.html" class="nav-link">
                     <li>
@@ -48,7 +48,7 @@
                                 <p>Board Of Directors</p>
                             </li>
                         </a>
-
+    
                         <a href="../management/management.html" class="about-menu-item">
                             <li>
                                 <p>
@@ -75,15 +75,21 @@
                     </li>
                 </a>
             </ul>
-
+    
             <button class="nav-btn">
                 <p class="paragraph--2">Sign in</p>
             </button>
+    
+            <div class="hamburger" data-open="false" onclick="toggleNav()">
+                <div class="hamburger__line hamburger_line--one"></div>
+                <div class="hamburger__line hamburger_line--two"></div>
+                <div class="hamburger__line hamburger_line--three"></div>
+            </div>
         </nav>
 
         <main class="order-container">
             <div class="hero">
-                <svg width="40" class="loaction-icon" height="40" viewBox="0 0 40 40" fill="none"
+                <svg width="40" class="location-icon" height="40" viewBox="0 0 40 40" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_866_6869)">
                         <path
@@ -4164,7 +4170,17 @@
             const aboutMenu = document.querySelector(".about-menu")
             aboutMenu.classList.toggle("opacity1")
         }
-
+        function toggleNav() {
+            const dataOpen = document.querySelector(".hamburger")
+            const navItem = document.querySelector(".nav-item")
+            if (dataOpen.getAttribute("data-open") == "false") {
+                dataOpen.setAttribute("data-open", "true")
+                navItem.style.transform = "translateY(0)"
+            } else {
+                dataOpen.setAttribute("data-open", "false")
+                navItem.style.transform = "translateY(-110%)"
+            }
+        }
     </script>
     
 </body>
