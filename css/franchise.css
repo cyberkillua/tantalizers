@@ -127,7 +127,6 @@ h4 {
 
 .swiper-pagination-bullet-active {
   width: 7rem;
-  background-color: red;
 }
 
 .paragraph--5 {
@@ -198,7 +197,6 @@ ul {
 .nav-item {
   display: flex;
   align-items: center;
-  position: relative;
 }
 @media (max-width: 480px) {
   .nav-item {
@@ -219,7 +217,6 @@ ul {
 .nav-item .nav-link {
   padding: 1rem;
   cursor: pointer;
-  position: relative;
   margin-right: 1.2rem;
 }
 .nav-item .nav-link li {

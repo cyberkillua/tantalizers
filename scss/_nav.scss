@@ -29,7 +29,6 @@
     &-item {
         display: flex;
         align-items: center;
-        position: relative;
 
         @include mobile {
             position: fixed;
@@ -49,7 +48,6 @@
         .nav-link {
             padding: 1rem;
             cursor: pointer;
-            position: relative;
             margin-right: torem(12);
 
             li {

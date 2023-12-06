@@ -138,13 +138,10 @@
                 position: relative;
 
                 .swiper-slide {
-                    border: 1px solid red;
-                    width: fit-content;
                     margin-right: 3.7rem;
 
                     .carousel-image {
                         width: 22rem;
-                        border: 1px solid red;
                         height: 18rem;
                         border-radius: 1.6rem;
                         margin-bottom: torem(16);
@@ -156,7 +153,6 @@
                     }
 
                     .card-bottom {
-                        border: 1px solid red;
                         display: flex;
                         flex-direction: column;
                         gap: .8rem;

@@ -127,7 +127,6 @@ h4 {
 
 .swiper-pagination-bullet-active {
   width: 7rem;
-  background-color: red;
 }
 
 .paragraph--5 {
@@ -198,7 +197,6 @@ ul {
 .nav-item {
   display: flex;
   align-items: center;
-  position: relative;
 }
 @media (max-width: 480px) {
   .nav-item {
@@ -219,7 +217,6 @@ ul {
 .nav-item .nav-link {
   padding: 1rem;
   cursor: pointer;
-  position: relative;
   margin-right: 1.2rem;
 }
 .nav-item .nav-link li {
@@ -670,14 +667,10 @@ ul {
   position: relative;
 }
 .info-top .swiper .swiper-wrapper .swiper-slide {
-  border: 1px solid red;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-right: 3.7rem;
 }
 .info-top .swiper .swiper-wrapper .swiper-slide .carousel-image {
   width: 22rem;
-  border: 1px solid red;
   height: 18rem;
   border-radius: 1.6rem;
   margin-bottom: 1.6rem;
@@ -689,7 +682,6 @@ ul {
   }
 }
 .info-top .swiper .swiper-wrapper .swiper-slide .card-bottom {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;

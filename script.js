@@ -6,17 +6,16 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
     slidesPerView: 1.5,
-    loop:true,
-    spaceBetween: 0,
+    spaceBetween: 20,
     breakpoints: {
         700: {
             slidesPerView: 5.5,
             spaceBetween: 200,
         },
     },
-    // autoplay: {
-    //     delay: 1000,
-    // },
+    autoplay: {
+        delay: 1000,
+    },
 });
 
 const carouselChildren = [
