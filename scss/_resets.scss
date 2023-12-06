@@ -121,6 +121,11 @@ h4 {
 
 .swiper-pagination {
   margin-top: 7rem;
+
+  @include mobile{
+    margin-top: 4rem;
+
+  }
 }
 
 .swiper-pagination-bullet-active{
@@ -148,6 +153,11 @@ h4 {
     font-style: normal;
     font-weight: 900;
     line-height: 2.4rem;
+
+    @include mobile{
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
 
 }
 

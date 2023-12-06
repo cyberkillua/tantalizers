@@ -124,6 +124,11 @@ h4 {
 .swiper-pagination {
   margin-top: 7rem;
 }
+@media (max-width: 480px) {
+  .swiper-pagination {
+    margin-top: 4rem;
+  }
+}
 
 .swiper-pagination-bullet-active {
   width: 7rem;
@@ -151,6 +156,12 @@ h4 {
   font-style: normal;
   font-weight: 900;
   line-height: 2.4rem;
+}
+@media (max-width: 480px) {
+  .subtitle--3 {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
 }
 
 a {
