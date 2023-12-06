@@ -117,8 +117,11 @@
         <section class="info">
             <div class="info-top">
                 <h2 class="info-top-header"> Special Delicacies </h2>
-                <swiper-container class="carousel" space-between="37">
-                </swiper-container>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-pagination" style="position: relative;"></div>
+                </div>
             </div>
             <div class="info-bottom">
                 <h2 class="info-bottom-header">How it works </h2>
@@ -415,7 +418,9 @@
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
     </script>
     <script>
         function toggleDropDown() {
@@ -434,32 +439,7 @@
             }
         }
     </script>
-    <script>
-        const swiper = new Swiper('.carousel', {
-            // Default parameters
-            slidesPerView: 4,
-            spaceBetween: 10,
-            // Responsive breakpoints
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                }
-            }
-        })
 
-    </script>
 </body>
 
 </html>

@@ -1,4 +1,24 @@
-const carousel = document.querySelector(".carousel")
+const carousel = document.querySelector(".swiper-wrapper")
+const swiper = new Swiper('.swiper', {
+    pagination: {
+        el: '.swiper-pagination',
+        bulletClass: `swiper-pagination-bullet swiper-pagination-testClass`,
+        clickable: true,
+    },
+    slidesPerView: 1.5,
+    loop:true,
+    spaceBetween: 0,
+    breakpoints: {
+        700: {
+            slidesPerView: 5.5,
+            spaceBetween: 200,
+        },
+    },
+    // autoplay: {
+    //     delay: 1000,
+    // },
+});
+
 const carouselChildren = [
     {
         src: "./images/frame.png",
@@ -46,30 +66,10 @@ const carouselChildren = [
         price: "₦ 2,330.00"
     },
 ]
-var menu = ['Slide 1', 'Slide 2', 'Slide 3']
-
-var mySwiper = new Swiper('.carousel', {
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (menu[index]) + '</span>';
-        },
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-})
-
-
 
 carouselChildren.forEach(item => {
-    const card = document.createElement('swiper-slide')
-    card.classList.add("card")
+    const card = document.createElement('div')
+    card.classList.add("swiper-slide")
     card.innerHTML = `
     <img src=${item.src} class="carousel-image" alt=${item.name} /> 
     <div class="card-bottom">

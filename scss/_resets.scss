@@ -118,6 +118,16 @@ h4 {
     }
 }
 
+
+.swiper-pagination {
+  margin-top: 7rem;
+}
+
+.swiper-pagination-bullet-active{
+    width: 7rem;
+    background-color: red;
+}
+
 .paragraph--5 {
     color: #202020;
     font-family: inherit;

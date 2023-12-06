@@ -121,6 +121,15 @@ h4 {
   }
 }
 
+.swiper-pagination {
+  margin-top: 7rem;
+}
+
+.swiper-pagination-bullet-active {
+  width: 7rem;
+  background-color: red;
+}
+
 .paragraph--5 {
   color: #202020;
   font-family: inherit;
@@ -654,48 +663,50 @@ ul {
 .info-top-header {
   margin-bottom: 4rem;
 }
-.info-top .carousel {
+.info-top .swiper {
   margin-bottom: 9.6rem;
 }
-.info-top .carousel .card {
+.info-top .swiper .swiper-wrapper {
+  position: relative;
+}
+.info-top .swiper .swiper-wrapper .swiper-slide {
+  border: 1px solid red;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-right: 3.7rem;
 }
-.info-top .carousel .card .carousel-image {
+.info-top .swiper .swiper-wrapper .swiper-slide .carousel-image {
   width: 22rem;
+  border: 1px solid red;
   height: 18rem;
   border-radius: 1.6rem;
   margin-bottom: 1.6rem;
 }
 @media (max-width: 480px) {
-  .info-top .carousel .card .carousel-image {
+  .info-top .swiper .swiper-wrapper .swiper-slide .carousel-image {
     width: 15rem;
     height: 10rem;
   }
 }
-.info-top .carousel .card .card-bottom {
+.info-top .swiper .swiper-wrapper .swiper-slide .card-bottom {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   width: 22rem;
 }
 @media (max-width: 480px) {
-  .info-top .carousel .card .card-bottom {
+  .info-top .swiper .swiper-wrapper .swiper-slide .card-bottom {
     width: 17rem;
   }
 }
-.info-top .carousel .card .card-bottom .food-name {
+.info-top .swiper .swiper-wrapper .swiper-slide .card-bottom .food-name {
   text-align: center;
   width: 100%;
   height: 4rem;
 }
-.info-top .carousel .card .card-bottom .price {
+.info-top .swiper .swiper-wrapper .swiper-slide .card-bottom .price {
   text-align: center;
-}
-.info-top .carousel .swiper-pagination {
-  position: fixed;
-  width: 100%;
-  display: block;
-  height: 5rem;
 }
 .info-bottom-header {
   margin-bottom: 4rem;
@@ -752,7 +763,7 @@ ul {
 }
 @media (max-width: 480px) {
   .ad {
-    padding: 5rem 2rem;
+    padding: 5rem 1.5rem;
   }
 }
 .ad-content {
@@ -761,7 +772,7 @@ ul {
   color: white;
 }
 .ad-content-header {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
 }
 @media (max-width: 480px) {
   .ad-content-header {
@@ -773,12 +784,18 @@ ul {
 }
 @media (max-width: 480px) {
   .ad-content-p {
-    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
   }
 }
 .ad-content .ad-btn-container {
   display: flex;
   gap: 1.3rem;
+}
+@media (max-width: 480px) {
+  .ad-content .ad-btn-container {
+    gap: 0.5rem;
+  }
 }
 .ad-content .ad-btn-container .ad-btn {
   background-color: #FFF;
@@ -788,6 +805,12 @@ ul {
 }
 @media (max-width: 480px) {
   .ad-content .ad-btn-container .ad-btn {
-    padding: 1rem 2.2rem;
+    padding: 0.8rem 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .ad-content .ad-btn-container .ad-btn p {
+    font-size: 1.2rem;
+    line-height: 0.8rem;
   }
 }/*# sourceMappingURL=index.css.map */
