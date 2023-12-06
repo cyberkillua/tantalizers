@@ -242,7 +242,7 @@
     background-size: cover;
 
     @include mobile {
-        padding: 5rem 0 10rem 5rem;
+        padding: 5rem 2rem;
     }
 
     &-content {
@@ -251,10 +251,19 @@
 
         &-header {
             margin-bottom: 1.6rem;
+
+            @include mobile{
+                font-size: 2.4rem;
+            }
         }
 
         &-p {
             margin-bottom: 5rem;
+            
+            @include mobile{
+                font-size: 1.3rem;
+            }
+            
         }
 
         .ad-btn-container {

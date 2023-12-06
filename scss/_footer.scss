@@ -7,7 +7,7 @@
 
     @include mobile {
         flex-direction: column;
-        padding: convertToRem(64) convertToRem(96);
+        padding: convertToRem(64) 1.5rem;
     }
 
     .col-1 {
@@ -21,7 +21,15 @@
                 margin-top: 2.4rem;
 
                 @include mobile {
-                    margin-top: convertToRem(17);
+                    margin-top: .3rem;
+                }
+
+                .copy-right{
+
+                    @include mobile{
+                        margin-top: .4rem;
+                    }
+                 
                 }
             }
 
@@ -31,7 +39,7 @@
                 gap: 2rem;
 
                 @include mobile {
-                    margin-top: convertToRem(16);
+                    margin-top: .3rem;
                 }
             }
         }
@@ -43,7 +51,7 @@
 
             @include mobile {
                 margin-bottom: convertToRem(23);
-                margin-top: convertToRem(50);
+                margin-top: 2.5rem;
             }
         }
 
@@ -57,7 +65,16 @@
             padding: 1rem 1rem 1rem 0;
 
             @include mobile {
-                padding: convertToRem(1) .7rem .7rem 0;
+                padding: .2rem .7rem .2rem 0;
+            }
+
+            li{
+                p{
+                    @include mobile{
+                        font-size: 1.4rem;
+                        line-height: 1.7rem;
+                    }
+                }
             }
         }
     }
@@ -82,8 +99,8 @@
             gap: 1.6rem;
 
             @include mobile {
-                margin-bottom: 1rem;
-                gap: 1rem;
+                margin-bottom: .3rem;
+                gap: .5rem;
             }
 
             .icon {

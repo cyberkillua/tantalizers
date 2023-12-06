@@ -4,7 +4,7 @@
 }
 
 @function convertToRem($value){
-    $remValue: floor((calc($value / 25.77)) * 100) /100 + rem;
+    $remValue: calc(floor((calc($value / 25.77)) * 100) / 100) + rem;
     @return $remValue;
 }
 
