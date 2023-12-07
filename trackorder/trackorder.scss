@@ -15,6 +15,11 @@
             padding: 3.2rem 0;
             align-items: center;
 
+
+            @include mobile {
+                padding: 2rem .8rem;
+            }
+
             .top {
                 display: flex;
                 padding: .8rem 1.6rem;
@@ -41,6 +46,11 @@
                 gap: 2rem;
                 align-items: center;
 
+                @include mobile {
+                    overflow-x: scroll;
+                    width: 100%;
+                }
+
                 .step {
                     display: flex;
                     padding: .8rem 2.4rem;
@@ -55,6 +65,10 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 1.4rem;
+
+                        @include mobile {
+                            text-wrap: nowrap;
+                        }
                     }
                 }
 
@@ -78,7 +92,14 @@
             justify-content: space-between;
             padding: 8rem 9.6rem;
 
+            @include mobile {
+                flex-direction: column;
+                gap: 5rem;
+                padding: 2rem;
+            }
+
             .content-left {
+
                 .top-card {
                     margin-bottom: 4.0rem;
                     padding: 2.4rem 31.6rem 2.4rem 2.4rem;
@@ -87,6 +108,10 @@
                     border: 1px solid #E9E9E9;
                     background: #FFF;
                     box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+
+                    @include mobile {
+                        padding: 2rem 0rem 2rem 2rem;
+                    }
 
                     .code {
                         color: #202020;
@@ -115,6 +140,11 @@
                     border: 1px solid #E9E9E9;
                     background: #FFF;
                     box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+
+                    @include mobile {
+                        width: 100%;
+                        padding: 2rem;
+                    }
 
                     .card-subtitle {
                         color: #202020;
@@ -213,7 +243,6 @@
                 width: 58.2rem;
                 display: flex;
                 flex-direction: column;
-
                 align-items: center;
                 height: 51.4rem;
                 flex-shrink: 0;
@@ -221,12 +250,24 @@
                 background: #FFF;
                 box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
 
+                @include mobile {
+                    width: 100%;
+                    height: fit-content;
+                    padding: 4rem 2rem;
+                }
+
                 .right-subtitle {
                     color: #202020;
                     font-size: 1.8rem;
                     font-style: normal;
                     font-weight: 700;
                     line-height: 2.4rem;
+
+                    @include mobile{
+                        font-size: 1.4rem;
+                        line-height: 1.8rem;
+
+                    }
                 }
 
                 .time {
@@ -236,7 +277,12 @@
                     font-weight: 900;
                     margin-bottom: 3.2rem;
                     line-height: 3rem;
-                    /* 136.364% */
+
+                    @include mobile{
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                        margin-bottom: 2rem;
+                    }
                 }
 
                 .right-content {
@@ -248,17 +294,37 @@
                         display: flex;
                         flex-direction: column;
                         gap: 6.8rem;
+
+                        @include mobile {
+                            margin-top: 4.5rem;
+                            gap: 4.5rem;
+                            width: 30%;
+                            height: fit-content;
+                        }
+
+                        p {
+                            font-size: 1.4rem;
+                            flex-wrap: nowrap;
+                        }
                     }
 
                     .content-col-2 {
                         margin-right: 2.6rem;
                         margin-left: 3.2rem;
                         height: 32rem;
+
+                        @include mobile {
+                            height: 25rem;
+                        }
                     }
 
                     .content-col-3 {
                         .status {
                             margin-bottom: 2rem;
+
+                            @include mobile {
+                                margin-bottom: 2.5rem;
+                            }
                         }
 
                         .col-3-items {
@@ -266,6 +332,9 @@
                             flex-direction: column;
                             gap: 3.2rem;
 
+                            @include mobile{
+                                gap: 1.3rem;
+                            }
                             .col-3-item {
                                 .item-header {
                                     color: #202020;
@@ -274,14 +343,25 @@
                                     font-style: normal;
                                     font-weight: 500;
                                     line-height: 2.4rem;
+
+                                    @include mobile {
+                                        font-size: 1.4rem;
+                                        margin-bottom: 0rem;
+                                        line-height: 1.8rem;
+                                    }
                                 }
 
                                 .item-p {
-                                    color:  rgba(32, 32, 32, 0.70);
+                                    color: rgba(32, 32, 32, 0.70);
                                     font-size: 1.4rem;
                                     font-style: normal;
                                     font-weight: 500;
                                     line-height: 2.0rem;
+
+                                    @include mobile {
+                                        font-size: 1.2rem;
+                                        line-height: 1.5rem;
+                                    }
                                 }
                             }
                         }

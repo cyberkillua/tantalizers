@@ -558,6 +558,11 @@ ul {
   padding: 3.2rem 0;
   align-items: center;
 }
+@media (max-width: 480px) {
+  .order-complete-container .order-compelete-header {
+    padding: 2rem 0.8rem;
+  }
+}
 .order-complete-container .order-compelete-header .top {
   display: flex;
   padding: 0.8rem 1.6rem;
@@ -582,6 +587,12 @@ ul {
   gap: 2rem;
   align-items: center;
 }
+@media (max-width: 480px) {
+  .order-complete-container .order-compelete-header .bottom {
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
 .order-complete-container .order-compelete-header .bottom .step {
   display: flex;
   padding: 0.8rem 2.4rem;
@@ -596,6 +607,11 @@ ul {
   font-style: normal;
   font-weight: 500;
   line-height: 1.4rem;
+}
+@media (max-width: 480px) {
+  .order-complete-container .order-compelete-header .bottom .step p {
+    text-wrap: nowrap;
+  }
 }
 .order-complete-container .order-compelete-header .bottom .arrow-icon {
   width: 8rem;
@@ -623,6 +639,13 @@ ul {
   height: 22.4rem;
   flex-shrink: 0;
 }
+@media (max-width: 480px) {
+  .order-complete-container .main-content .success-svg {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 2rem;
+  }
+}
 .order-complete-container .main-content .congrats {
   color: #168F13;
   font-family: "Fredoka", sans-serif;
@@ -633,7 +656,12 @@ ul {
   font-weight: 600;
   margin-bottom: 1.6rem;
   line-height: 5.4rem;
-  /* 112.5% */
+}
+@media (max-width: 480px) {
+  .order-complete-container .main-content .congrats {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 .order-complete-container .main-content .congarts-p {
   color: #11730F;
@@ -642,6 +670,13 @@ ul {
   margin-bottom: 8.4rem;
   font-weight: 500;
   line-height: 3.6rem;
+}
+@media (max-width: 480px) {
+  .order-complete-container .main-content .congarts-p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+  }
 }
 .order-complete-container .main-content .track-btn {
   display: flex;
@@ -652,6 +687,11 @@ ul {
   border-radius: 0.8rem;
   border: 1px solid #F00;
   background: #F00;
+}
+@media (max-width: 480px) {
+  .order-complete-container .main-content .track-btn {
+    width: 28rem;
+  }
 }
 .order-complete-container .main-content .track-btn p {
   color: #FFF;

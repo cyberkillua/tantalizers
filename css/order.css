@@ -558,6 +558,11 @@ ul {
 }
 @media (max-width: 480px) {
   .order .order-container .hero {
+    border: 1px solid red;
+  }
+}
+@media (max-width: 480px) {
+  .order .order-container .hero {
     padding: 0;
     background-color: transparent;
   }

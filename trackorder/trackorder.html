@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>track-order</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/trackorder.css">
@@ -59,7 +59,7 @@
                     <li>
                         <p>Franchise</p>
                     </li>
-                </a><a href="../outlets/outlets.html" class="nav-link">
+                </a><a href="./outlets/outlets.html" class="nav-link">
                     <li>
                         <p>Outlets</p>
                     </li>
@@ -77,6 +77,12 @@
             <button class="nav-btn">
                 <p class="paragraph--2">Sign in</p>
             </button>
+
+            <div class="hamburger" data-open="false" onclick="toggleNav()">
+                <div class="hamburger__line hamburger_line--one"></div>
+                <div class="hamburger__line hamburger_line--two"></div>
+                <div class="hamburger__line hamburger_line--three"></div>
+            </div>
         </nav>
         <main class="trackorder">
             <div class="trackorder-header">
@@ -270,7 +276,7 @@
             </div>
         </main>
     </section>
-    <footer class=" footer">
+    <footer class="footer">
         <div class="col-1">
             <img src="../images/logo.svg" alt="" class="footer-logo">
             <ul>
@@ -340,7 +346,7 @@
                     </ul>
                 </li>
                 <li class="footer-item">
-                    <p class="title--2">2023 | All rights reserved by Tantalizers</p>
+                    <p class="paragraph--5 copy-right">2023 | All rights reserved by Tantalizers</p>
                 </li>
             </ul>
         </div>
@@ -362,7 +368,7 @@
                     <li>
                         <p>Outlets</p>
                     </li>
-                </a><a href="../contact/contact.html" class="col-2-link">
+                </a><a href="../policy/policy.html" class="col-2-link">
                     <li>
                         <p>Privacy Policy</p>
                     </li>
@@ -381,7 +387,8 @@
             <ul class="contact-item">
                 <li>
                     <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
                             <g clip-path="url(#clip0_973_12696)">
                                 <path
                                     d="M10 0C6.7298 0 4.0498 2.672 4.0498 5.9332C4.0498 7.1968 4.4534 8.3712 5.1364 9.3364L9.2738 16.489C9.8532 17.246 10.2384 17.1022 10.7202 16.449L15.2838 8.683C15.3758 8.5162 15.4482 8.3386 15.5112 8.1572C15.8008 7.4515 15.9497 6.69601 15.9496 5.9332C15.9498 2.672 13.2706 0 10 0ZM10 2.78C11.7612 2.78 13.1616 4.1772 13.1616 5.9332C13.1616 7.6892 11.7612 9.0858 10 9.0858C8.239 9.0858 6.83801 7.6894 6.83801 5.9332C6.83801 4.1772 8.239 2.7802 10 2.7802V2.78Z"
@@ -398,12 +405,12 @@
                         </svg>
                     </span>
 
-                    <a href="#" class="paragraph--5">Makay Plaza, 21 Road, I Close, Festac Town,
-                        Lagos</a>
+                    <a href="#" class="paragraph--5">Makay Plaza, 21 Road, I Close, Festac Town, Lagos</a>
                 </li>
                 <li>
                     <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
                             <path
                                 d="M18.3332 5.00004C18.3332 4.08337 17.5832 3.33337 16.6665 3.33337H3.33317C2.4165 3.33337 1.6665 4.08337 1.6665 5.00004V15C1.6665 15.9167 2.4165 16.6667 3.33317 16.6667H16.6665C17.5832 16.6667 18.3332 15.9167 18.3332 15V5.00004ZM16.6665 5.00004L9.99984 9.16671L3.33317 5.00004H16.6665ZM16.6665 15H3.33317V6.66671L9.99984 10.8334L16.6665 6.66671V15Z"
                                 fill="#202020" fill-opacity="0.7" />
@@ -413,17 +420,19 @@
                 </li>
                 <li>
                     <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
                             <path
                                 d="M16.6667 12.9167C15.6667 12.9167 14.5833 12.75 13.6667 12.4167H13.4167C13.1667 12.4167 13 12.5 12.8333 12.6667L11 14.5C8.66667 13.25 6.66667 11.3333 5.5 9L7.33333 7.16667C7.58333 6.91667 7.66667 6.58333 7.5 6.33333C7.25 5.41667 7.08333 4.33333 7.08333 3.33333C7.08333 2.91667 6.66667 2.5 6.25 2.5H3.33333C2.91667 2.5 2.5 2.91667 2.5 3.33333C2.5 11.1667 8.83333 17.5 16.6667 17.5C17.0833 17.5 17.5 17.0833 17.5 16.6667V13.75C17.5 13.3333 17.0833 12.9167 16.6667 12.9167ZM4.16667 4.16667H5.41667C5.5 4.91667 5.66667 5.66667 5.83333 6.33333L4.83333 7.33333C4.5 6.33333 4.25 5.25 4.16667 4.16667ZM15.8333 15.8333C14.75 15.75 13.6667 15.5 12.6667 15.1667L13.6667 14.1667C14.3333 14.3333 15.0833 14.5 15.8333 14.5V15.8333Z"
                                 fill="#202020" fill-opacity="0.7" />
                         </svg>
                     </span>
-                    <a href="#" class="paragraph--2">+234 (0) 7015999147</a>
+                    <a href="#" class="paragraph--5">+234 (0) 7015999147</a>
                 </li>
                 <li>
                     <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
                             <path
                                 d="M10 2.5C5.85938 2.5 2.5 5.85938 2.5 10C2.5 14.1406 5.85938 17.5 10 17.5C14.1406 17.5 17.5 14.1406 17.5 10C17.5 5.85938 14.1406 2.5 10 2.5Z"
                                 stroke="#202020" stroke-opacity="0.7" stroke-width="1.25" stroke-miterlimit="10" />
@@ -441,7 +450,17 @@
             const aboutMenu = document.querySelector(".about-menu")
             aboutMenu.classList.toggle("opacity1")
         }
-    
+        function toggleNav() {
+            const dataOpen = document.querySelector(".hamburger")
+            const navItem = document.querySelector(".nav-item")
+            if (dataOpen.getAttribute("data-open") == "false") {
+                dataOpen.setAttribute("data-open", "true")
+                navItem.style.transform = "translateY(0)"
+            } else {
+                dataOpen.setAttribute("data-open", "false")
+                navItem.style.transform = "translateY(-110%)"
+            }
+        }
     </script>
 </body>
 

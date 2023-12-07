@@ -59,7 +59,7 @@
                     <li>
                         <p>Franchise</p>
                     </li>
-                </a><a href="../outlets/outlets.html" class="nav-link">
+                </a><a href="./outlets/outlets.html" class="nav-link">
                     <li>
                         <p>Outlets</p>
                     </li>
@@ -77,6 +77,12 @@
             <button class="nav-btn">
                 <p class="paragraph--2">Sign in</p>
             </button>
+
+            <div class="hamburger" data-open="false" onclick="toggleNav()">
+                <div class="hamburger__line hamburger_line--one"></div>
+                <div class="hamburger__line hamburger_line--two"></div>
+                <div class="hamburger__line hamburger_line--three"></div>
+            </div>
         </nav>
         <main class="checkout">
             <div class="checkout-header">
@@ -262,7 +268,7 @@
             </div>
         </main>
     </section>
-    <footer class=" footer">
+    <footer class="footer">
         <div class="col-1">
             <img src="../images/logo.svg" alt="" class="footer-logo">
             <ul>
@@ -332,7 +338,7 @@
                     </ul>
                 </li>
                 <li class="footer-item">
-                    <p class="title--2">2023 | All rights reserved by Tantalizers</p>
+                    <p class="paragraph--5 copy-right">2023 | All rights reserved by Tantalizers</p>
                 </li>
             </ul>
         </div>
@@ -354,7 +360,7 @@
                     <li>
                         <p>Outlets</p>
                     </li>
-                </a><a href="../contact/contact.html" class="col-2-link">
+                </a><a href="../policy/policy.html" class="col-2-link">
                     <li>
                         <p>Privacy Policy</p>
                     </li>
@@ -391,8 +397,7 @@
                         </svg>
                     </span>
 
-                    <a href="#" class="paragraph--5">Makay Plaza, 21 Road, I Close, Festac Town,
-                        Lagos</a>
+                    <a href="#" class="paragraph--5">Makay Plaza, 21 Road, I Close, Festac Town, Lagos</a>
                 </li>
                 <li>
                     <span class="icon">
@@ -414,7 +419,7 @@
                                 fill="#202020" fill-opacity="0.7" />
                         </svg>
                     </span>
-                    <a href="#" class="paragraph--2">+234 (0) 7015999147</a>
+                    <a href="#" class="paragraph--5">+234 (0) 7015999147</a>
                 </li>
                 <li>
                     <span class="icon">
@@ -437,7 +442,17 @@
             const aboutMenu = document.querySelector(".about-menu")
             aboutMenu.classList.toggle("opacity1")
         }
-    
+        function toggleNav() {
+            const dataOpen = document.querySelector(".hamburger")
+            const navItem = document.querySelector(".nav-item")
+            if (dataOpen.getAttribute("data-open") == "false") {
+                dataOpen.setAttribute("data-open", "true")
+                navItem.style.transform = "translateY(0)"
+            } else {
+                dataOpen.setAttribute("data-open", "false")
+                navItem.style.transform = "translateY(-110%)"
+            }
+        }
     </script>
 </body>
 

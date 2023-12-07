@@ -12,6 +12,10 @@
             padding: 4.8rem 0 4.8rem 9.6rem;
             display: flex;
             background: #300;
+
+            @include mobile{
+                border: 1px solid red;
+            }
             
 
             @include mobile {
