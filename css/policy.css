@@ -126,7 +126,7 @@ h4 {
 }
 @media (max-width: 480px) {
   .swiper-pagination {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -346,6 +346,11 @@ ul {
   width: 9.4rem;
   height: 4.8rem;
 }
+@media (max-width: 480px) {
+  .footer .col-1 .footer-logo {
+    width: 7rem;
+  }
+}
 .footer .col-1 ul .footer-item {
   margin-top: 2.4rem;
 }
@@ -366,7 +371,7 @@ ul {
 }
 @media (max-width: 480px) {
   .footer .col-1 ul .social-item {
-    margin-top: 0.3rem;
+    margin-top: 0.7rem;
   }
 }
 .footer .col-2 .footer-header {

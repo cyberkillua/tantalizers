@@ -126,7 +126,7 @@ h4 {
 }
 @media (max-width: 480px) {
   .swiper-pagination {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -346,6 +346,11 @@ ul {
   width: 9.4rem;
   height: 4.8rem;
 }
+@media (max-width: 480px) {
+  .footer .col-1 .footer-logo {
+    width: 7rem;
+  }
+}
 .footer .col-1 ul .footer-item {
   margin-top: 2.4rem;
 }
@@ -366,7 +371,7 @@ ul {
 }
 @media (max-width: 480px) {
   .footer .col-1 ul .social-item {
-    margin-top: 0.3rem;
+    margin-top: 0.7rem;
   }
 }
 .footer .col-2 .footer-header {
@@ -642,7 +647,7 @@ ul {
     width: 100%;
     font-size: 1.2rem;
     padding: 0.7rem;
-    height: 3.5rem;
+    height: 5rem;
   }
 }
 .hero .hero-content-bottom .select .hero-option,
@@ -665,7 +670,7 @@ ul {
 }
 @media (max-width: 480px) {
   .info {
-    padding: 3.72rem;
+    padding: 2rem;
   }
 }
 .info-top-header {
@@ -673,6 +678,11 @@ ul {
 }
 .info-top .swiper {
   margin-bottom: 9.6rem;
+}
+@media (max-width: 480px) {
+  .info-top .swiper {
+    margin-bottom: 4rem;
+  }
 }
 .info-top .swiper .swiper-wrapper {
   position: relative;

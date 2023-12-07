@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper', {
         bulletClass: `swiper-pagination-bullet swiper-pagination-testClass`,
         clickable: true,
     },
-    slidesPerView: 1.8,
+    slidesPerView: 2.1,
     spaceBetween: 40,
     breakpoints: {
         700: {

@@ -101,7 +101,7 @@
                     width: 100%;
                     font-size: 1.2rem;
                     padding: .7rem;
-                    height: 3.5rem;
+                    height: 5rem;
                 }
 
                 .hero-option {
@@ -124,16 +124,19 @@
     padding: 9.6rem;
 
     @include mobile {
-        padding: convertToRem(96);
+        padding: 2rem;
     }
 
     &-top {
         &-header {
             margin-bottom: 4rem;
+            
         }
-
         .swiper {
             margin-bottom: 9.6rem;
+            @include mobile{
+                margin-bottom: 4rem;
+            }
             .swiper-wrapper {
                 position: relative;
 
