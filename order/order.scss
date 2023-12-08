@@ -13,9 +13,8 @@
             display: flex;
             background: #300;
 
-            @include mobile{
-            }
-            
+            @include mobile {}
+
 
             @include mobile {
                 padding: 0;
@@ -124,9 +123,10 @@
                 align-items: center;
                 padding: 1.2rem 2.4rem;
 
-                @include mobile{
+                @include mobile {
                     width: 12rem;
                 }
+
                 &:hover {
                     cursor: pointer;
                 }
@@ -198,6 +198,10 @@
                     grid-template-columns: repeat(auto-fit, minmax(32.4rem, 1fr));
                     row-gap: 4rem;
 
+                    @include mobile{
+                        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+                    }
+
                     .grid-item {
                         width: fit-content;
                         border: 1px solid #E2E2E2;
@@ -207,10 +211,19 @@
                             width: 32.4rem;
                             height: 23.0rem;
                             border-radius: .8rem .8rem 0px 0px;
+
+                            @include mobile {
+                                width: 16rem;
+                                height: 12rem;
+                            }
                         }
 
                         &-bottom {
                             padding: 1.2rem;
+
+                            @include mobile {
+                                padding: .5rem;
+                            }
 
                             p {
                                 width: 30rem;
@@ -223,7 +236,12 @@
                                 font-style: normal;
                                 font-weight: 700;
                                 line-height: 3.0rem;
-                                /* 136.364% */
+
+                                @include mobile {
+                                    width: 15rem;
+                                    height: 2rem;
+                                    font-size: 1.5rem;
+                                }
                             }
 
                             .price {
@@ -234,7 +252,11 @@
                                 margin: 1.2rem 0;
                                 font-weight: 500;
                                 line-height: 2.4rem;
-                                /* 133.333% */
+
+                                @include mobile {
+                                    font-size: 1.2rem;
+                                    margin: .5rem 0;
+                                }
                             }
 
                             .last {
@@ -251,6 +273,11 @@
                                     border-radius: .4rem;
                                     border: 1px solid #E2E2E2;
 
+                                    @include mobile {
+                                        padding: .5rem;
+                                        width: 6rem;
+                                    }
+
                                     .increase,
                                     .decrease {
                                         display: flex;
@@ -258,6 +285,11 @@
                                         width: 2.4rem;
                                         height: 2.4rem;
                                         flex-shrink: 0;
+
+                                        @include mobile {
+                                            width: 2rem;
+                                            height: 2rem;
+                                        }
                                     }
 
                                     span {
@@ -266,15 +298,22 @@
                                         font-style: normal;
                                         font-weight: 500;
                                         line-height: 3rem;
-                                        /* 136.364% */
-                                    }
 
-                                    .add-to-card {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-self: center;
-                                        width: 2.4rem;
-                                        height: 2.4rem;
+                                        @include mobile{
+                                            font-size: 1.4rem;
+                                        }
+                                    }
+                                }
+                                .add-to-cart {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-self: center;
+                                    width: 2.4rem;
+                                    height: 2.4rem;
+
+                                    @include mobile{
+                                        width: 2rem;
+                                        height: 2rem;
                                     }
                                 }
                             }
@@ -391,7 +430,7 @@
                 line-height: 3.6rem;
                 margin-bottom: 3.2rem;
 
-                @include mobile{
+                @include mobile {
                     font-size: 2rem;
                     margin-bottom: 1.5rem;
                 }
@@ -402,7 +441,7 @@
                 gap: 1.6rem;
                 margin-bottom: 4.8rem;
 
-                @include mobile{
+                @include mobile {
                     margin-bottom: 2rem;
                 }
 
@@ -412,7 +451,7 @@
                     flex-shrink: 0;
                     border-radius: .8rem;
 
-                    @include mobile{
+                    @include mobile {
                         width: 9rem;
                         height: 6rem;
                     }
@@ -464,9 +503,10 @@
             background: #FFF;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
 
-            @include mobile{
+            @include mobile {
                 padding: 2rem;
             }
+
             &-top {
                 .total {
                     display: flex;
