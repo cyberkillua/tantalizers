@@ -558,11 +558,6 @@ ul {
 }
 @media (max-width: 480px) {
   .order .order-container .hero {
-    border: 1px solid red;
-  }
-}
-@media (max-width: 480px) {
-  .order .order-container .hero {
     padding: 0;
     background-color: transparent;
   }
@@ -886,7 +881,6 @@ ul {
   font-style: normal;
   font-weight: 500;
   line-height: 1.2rem;
-  /* 100% */
 }
 .order .carts-top .carts-close-btn .close-icon {
   width: 1.6rem;
@@ -905,16 +899,33 @@ ul {
   line-height: 3.6rem;
   margin-bottom: 3.2rem;
 }
+@media (max-width: 480px) {
+  .order .carts-top-header {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
 .order .carts-top-card {
   display: flex;
   gap: 1.6rem;
   margin-bottom: 4.8rem;
+}
+@media (max-width: 480px) {
+  .order .carts-top-card {
+    margin-bottom: 2rem;
+  }
 }
 .order .carts-top-card .carts-card-img {
   width: 11.2rem;
   height: 8rem;
   flex-shrink: 0;
   border-radius: 0.8rem;
+}
+@media (max-width: 480px) {
+  .order .carts-top-card .carts-card-img {
+    width: 9rem;
+    height: 6rem;
+  }
 }
 .order .carts-top-card .right .food-name {
   color: #202020;
@@ -952,6 +963,11 @@ ul {
   border-top: 1px solid #E9E9E9;
   background: #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 480px) {
+  .order .carts .carts-footer {
+    padding: 2rem;
+  }
 }
 .order .carts .carts-footer-top .total {
   display: flex;

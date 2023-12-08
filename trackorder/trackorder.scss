@@ -153,13 +153,21 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: 3rem;
-                        /* 136.364% */
+
+                        @include mobile{
+                            font-size: 2rem;
+                            margin-bottom: .8rem;
+                        }
                     }
 
                     .card-content-header {
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 1.6rem;
+
+                        @include mobile{
+                            margin-bottom: 1.2rem;
+                        }
                     }
 
                     .card-content {
@@ -170,6 +178,13 @@
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
+
+                            p {
+                                @include mobile {
+                                    font-size: 1.3rem;
+                                    line-height: 2rem;
+                                }
+                            }
                         }
 
                         .address {
@@ -185,6 +200,11 @@
                                 font-style: normal;
                                 font-weight: 500;
                                 line-height: 2.4rem;
+
+                                @include mobile{
+                                    font-size: 1.4rem;
+                                    line-height: 2rem;
+                                }
                             }
 
                             .recievers--address {
@@ -200,12 +220,22 @@
                         font-weight: 700;
                         line-height: 3rem;
                         margin-bottom: 1.6rem;
+
+                        @include mobile{
+                            font-size: 2rem;
+                            line-height: 2rem;
+                            margin-bottom: 1rem;
+                        }
                     }
 
                     .card-content-bottom {
                         display: flex;
                         gap: 1.2rem;
                         flex-direction: column;
+
+                        @include mobile{
+                            gap: .8rem;
+                        }
 
                         .card-item {
                             display: flex;
@@ -218,6 +248,11 @@
                                 font-style: normal;
                                 font-weight: 500;
                                 line-height: 2.4rem;
+
+                                @include mobile{
+                                    font-size: 1.4rem;
+                                    line-height: 2rem;
+                                }
                             }
 
                             .price {
@@ -227,6 +262,10 @@
                                 font-style: normal;
                                 font-weight: 500;
                                 line-height: 2.4rem;
+                                @include mobile{
+                                    font-size: 1.4rem;
+                                    line-height: 2rem;
+                                }
                             }
 
                             .total {
@@ -263,7 +302,7 @@
                     font-weight: 700;
                     line-height: 2.4rem;
 
-                    @include mobile{
+                    @include mobile {
                         font-size: 1.4rem;
                         line-height: 1.8rem;
 
@@ -278,7 +317,7 @@
                     margin-bottom: 3.2rem;
                     line-height: 3rem;
 
-                    @include mobile{
+                    @include mobile {
                         font-size: 1.8rem;
                         line-height: 2.4rem;
                         margin-bottom: 2rem;
@@ -332,9 +371,10 @@
                             flex-direction: column;
                             gap: 3.2rem;
 
-                            @include mobile{
+                            @include mobile {
                                 gap: 1.3rem;
                             }
+
                             .col-3-item {
                                 .item-header {
                                     color: #202020;

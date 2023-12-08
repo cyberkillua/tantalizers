@@ -687,12 +687,22 @@ ul {
   font-style: normal;
   font-weight: 700;
   line-height: 3rem;
-  /* 136.364% */
+}
+@media (max-width: 480px) {
+  .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-subtitle {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
 }
 .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.6rem;
+}
+@media (max-width: 480px) {
+  .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content-header {
+    margin-bottom: 1.2rem;
+  }
 }
 .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content {
   display: flex;
@@ -702,6 +712,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 480px) {
+  .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content .location p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
 }
 .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content .address {
   display: flex;
@@ -717,6 +733,13 @@ ul {
   font-weight: 500;
   line-height: 2.4rem;
 }
+@media (max-width: 480px) {
+  .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content .address .senders--address,
+  .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content .address .recievers--address {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
 .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content .address .recievers--address {
   text-align: end;
 }
@@ -728,10 +751,22 @@ ul {
   line-height: 3rem;
   margin-bottom: 1.6rem;
 }
+@media (max-width: 480px) {
+  .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .summary {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+}
 .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content-bottom {
   display: flex;
   gap: 1.2rem;
   flex-direction: column;
+}
+@media (max-width: 480px) {
+  .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content-bottom {
+    gap: 0.8rem;
+  }
 }
 .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content-bottom .card-item {
   display: flex;
@@ -745,6 +780,12 @@ ul {
   font-weight: 500;
   line-height: 2.4rem;
 }
+@media (max-width: 480px) {
+  .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content-bottom .card-item p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
 .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content-bottom .card-item .price {
   color: #202020;
   text-align: right;
@@ -752,6 +793,12 @@ ul {
   font-style: normal;
   font-weight: 500;
   line-height: 2.4rem;
+}
+@media (max-width: 480px) {
+  .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content-bottom .card-item .price {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
 }
 .trackorder-container .trackorder .trackorder-content .content-left .bottom-card .card-content-bottom .card-item .total {
   font-weight: 700;
