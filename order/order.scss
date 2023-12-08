@@ -200,6 +200,7 @@
 
                     @include mobile{
                         grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+                        row-gap: 2rem;
                     }
 
                     .grid-item {
@@ -239,7 +240,7 @@
 
                                 @include mobile {
                                     width: 15rem;
-                                    height: 2rem;
+                                    height: 3rem;
                                     font-size: 1.5rem;
                                 }
                             }
@@ -308,12 +309,12 @@
                                     display: flex;
                                     align-items: center;
                                     justify-self: center;
-                                    width: 2.4rem;
-                                    height: 2.4rem;
+                                    width: 5.6rem;
+                                    height: 5.6rem;
 
                                     @include mobile{
-                                        width: 2rem;
-                                        height: 2rem;
+                                        width: 3.6rem;
+                                        height: 3.6rem;
                                     }
                                 }
                             }
@@ -340,12 +341,22 @@
                     border: 1px solid #FFE6E6;
                     background: #FFE6E6;
 
+                    @include mobile{
+                        padding: 1rem 1.2rem;
+                        width: 20rem;
+                    }
+
                     p {
                         color: #300;
                         font-size: 1.6rem;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 1.6rem;
+
+                        @include mobile{
+                            font-size: 1.2rem;
+                            line-height: 1.4rem;
+                        }
                     }
                 }
             }

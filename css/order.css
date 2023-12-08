@@ -729,6 +729,7 @@ ul {
 @media (max-width: 480px) {
   .order .order-container .order-content-right .order-section-grid {
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    row-gap: 2rem;
   }
 }
 .order .order-container .order-content-right .order-section-grid .grid-item {
@@ -771,7 +772,7 @@ ul {
 @media (max-width: 480px) {
   .order .order-container .order-content-right .order-section-grid .grid-item-bottom p {
     width: 15rem;
-    height: 2rem;
+    height: 3rem;
     font-size: 1.5rem;
   }
 }
@@ -842,13 +843,13 @@ ul {
   display: flex;
   align-items: center;
   justify-self: center;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 5.6rem;
+  height: 5.6rem;
 }
 @media (max-width: 480px) {
   .order .order-container .order-content-right .order-section-grid .grid-item-bottom .last .add-to-cart {
-    width: 2rem;
-    height: 2rem;
+    width: 3.6rem;
+    height: 3.6rem;
   }
 }
 .order .order-container .order-content .see-more-btn {
@@ -869,12 +870,24 @@ ul {
   border: 1px solid #FFE6E6;
   background: #FFE6E6;
 }
+@media (max-width: 480px) {
+  .order .order-container .order-content .see-more-btn .see-more {
+    padding: 1rem 1.2rem;
+    width: 20rem;
+  }
+}
 .order .order-container .order-content .see-more-btn .see-more p {
   color: #300;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: 1.6rem;
+}
+@media (max-width: 480px) {
+  .order .order-container .order-content .see-more-btn .see-more p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
 }
 .order .back-drop {
   position: fixed;
