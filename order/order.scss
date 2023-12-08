@@ -338,6 +338,7 @@
         background-color: #FFF;
 
         @include mobile {
+            height: 100dvh;
             width: 100vw;
         }
 
