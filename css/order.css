@@ -465,6 +465,11 @@ ul {
   transform: translate(-50%, -50%);
   z-index: 35;
 }
+@media (max-width: 480px) {
+  .login {
+    padding: 2rem;
+  }
+}
 .login-header .welcome {
   color: #202020;
   font-family: "Fredoka", sans-serif;
@@ -475,6 +480,13 @@ ul {
   margin-bottom: 1.6rem;
   line-height: 4.4rem;
 }
+@media (max-width: 480px) {
+  .login-header .welcome {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+}
 .login-header .login-p {
   color: rgba(32, 32, 32, 0.7);
   font-size: 1.8rem;
@@ -482,9 +494,20 @@ ul {
   font-weight: 500;
   line-height: 2.4rem;
 }
+@media (max-width: 480px) {
+  .login-header .login-p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
 .login .middle {
   width: 100%;
   margin-top: 4rem;
+}
+@media (max-width: 480px) {
+  .login .middle {
+    margin-top: 2rem;
+  }
 }
 .login .middle .login-option {
   margin-bottom: 2.4rem;
@@ -497,6 +520,13 @@ ul {
   border: 1px solid #E2E2E2;
   background: #FFF;
 }
+@media (max-width: 480px) {
+  .login .middle .login-option {
+    width: 30rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 .login .middle .login-option p {
   color: #202020;
   text-align: center;
@@ -505,6 +535,12 @@ ul {
   font-style: normal;
   font-weight: 700;
   line-height: 1.6rem;
+}
+@media (max-width: 480px) {
+  .login .middle .login-option p {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
 }
 .login .middle .guest {
   text-align: center;
@@ -523,7 +559,6 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 24px;
-  border: 1px solid #F00;
   background: #F00;
 }
 .login .middle .check-out-btn p {
@@ -532,6 +567,12 @@ ul {
   font-style: normal;
   font-weight: 700;
   line-height: 1.6rem;
+}
+@media (max-width: 480px) {
+  .login .middle .check-out-btn p {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
 }
 .login .paragraph {
   color: #202020;
@@ -542,6 +583,14 @@ ul {
   font-weight: 500;
   width: 38.1rem;
   line-height: 1.6rem;
+}
+@media (max-width: 480px) {
+  .login .paragraph {
+    width: 25rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
 }
 
 .order {
@@ -773,7 +822,7 @@ ul {
   .order .order-container .order-content-right .order-section-grid .grid-item-bottom p {
     width: 15rem;
     height: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 .order .order-container .order-content-right .order-section-grid .grid-item-bottom .price {

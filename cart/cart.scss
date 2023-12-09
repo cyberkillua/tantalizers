@@ -3,7 +3,8 @@
 .mycart {
     .mycart-body {
         padding-top: 8.5rem;
-        @include mobile{
+
+        @include mobile {
             padding-top: 7rem;
         }
 
@@ -132,8 +133,6 @@
                 .mycart-item {
                     border-collapse: collapse;
                     width: 100%;
-
-                    @include mobile {}
 
                     thead {
 
@@ -305,7 +304,7 @@
                 align-self: flex-end;
 
                 @include mobile {
-                    width: convertToRem(380);
+                    width: 18rem;
                 }
 
                 .top {
@@ -343,6 +342,11 @@
                     font-style: italic;
                     font-weight: 500;
                     line-height: 1.6rem;
+
+                    @include mobile{
+                        font-size: .9rem;
+                        line-height: 1.2rem;
+                    }
                 }
             }
 
@@ -356,7 +360,7 @@
                 margin-top: 3.9rem;
 
                 @include mobile {
-                    margin-top: 2rem;
+                    margin-top: 1rem;
                     padding: .8rem 1.7rem;
                 }
 
@@ -368,7 +372,8 @@
                     line-height: 1.6rem;
 
                     @include mobile {
-                        font-size: .8rem;
+                        font-size:  .8rem;
+                        line-height: 1.2rem;
                     }
 
                 }
@@ -397,7 +402,10 @@
                     grid-template-columns: repeat(auto-fit, minmax(32.4rem, 1fr));
                     row-gap: 4rem;
 
-                    @include mobile {}
+                    @include mobile {
+                        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+                        row-gap: 2rem;
+                    }
 
                     .grid-item {
                         width: fit-content;
@@ -413,6 +421,10 @@
                             height: 23.0rem;
                             border-radius: .8rem .8rem 0px 0px;
 
+                            @include mobile {
+                                width: 16rem;
+                                height: 12rem;
+                            }
                         }
 
                         &-bottom {
@@ -429,7 +441,12 @@
                                 font-style: normal;
                                 font-weight: 700;
                                 line-height: 3.0rem;
-                                /* 136.364% */
+                                
+                                @include mobile {
+                                    width: 15rem;
+                                    height: 3rem;
+                                    font-size: 1.2rem;
+                                }
                             }
 
                             .price {
@@ -440,7 +457,11 @@
                                 margin: 1.2rem 0;
                                 font-weight: 500;
                                 line-height: 2.4rem;
-                                /* 133.333% */
+                                
+                                @include mobile {
+                                    font-size: 1.2rem;
+                                    margin: .5rem 0;
+                                }
                             }
 
                             .last {
@@ -457,6 +478,11 @@
                                     border-radius: .4rem;
                                     border: 1px solid #E2E2E2;
 
+                                    @include mobile {
+                                        padding: .5rem;
+                                        width: 6rem;
+                                    }
+
                                     .increase,
                                     .decrease {
                                         display: flex;
@@ -464,6 +490,11 @@
                                         width: 2.4rem;
                                         height: 2.4rem;
                                         flex-shrink: 0;
+
+                                        @include mobile {
+                                            width: 2rem;
+                                            height: 2rem;
+                                        }
                                     }
 
                                     span {
@@ -472,15 +503,22 @@
                                         font-style: normal;
                                         font-weight: 500;
                                         line-height: 3rem;
-                                        /* 136.364% */
-                                    }
 
-                                    .add-to-card {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-self: center;
-                                        width: 2.4rem;
-                                        height: 2.4rem;
+                                        @include mobile{
+                                            font-size: 1.4rem;
+                                        }
+                                    }
+                                }
+                                .add-to-cart {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-self: center;
+                                    width: 5.6rem;
+                                    height: 5.6rem;
+
+                                    @include mobile{
+                                        width: 3.8rem;
+                                        height: 3.8rem;
                                     }
                                 }
                             }
