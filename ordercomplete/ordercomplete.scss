@@ -16,7 +16,7 @@
         align-items: center;
 
         @include mobile {
-            padding: 2rem .8rem;
+            padding: 2.8rem 0;
         }
 
         .top {
@@ -30,13 +30,22 @@
             border: 1px solid #E9E9E9;
             background: #FFF;
 
+            @include mobile {
+                overflow-x: scroll;
+                width: 23rem;
+                gap: .3rem;
+            }
+
             h3 {
                 color: #202020;
                 font-size: 1.8rem;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 2.4rem;
-                /* 133.333% */
+
+                @include mobile {
+                    font-size: 1.2rem;
+                }
             }
         }
 
@@ -46,8 +55,10 @@
             align-items: center;
 
             @include mobile {
-                overflow-x: scroll;
+                padding: 1rem;
                 width: 100%;
+                gap: .5rem;
+                overflow-x: scroll;
             }
 
             .step {
@@ -58,6 +69,11 @@
                 border: 1px solid #E2E2E2;
                 background: #FFF;
 
+                @include mobile {
+                    padding: .5rem 1rem;
+                    width: 20rem;
+                }
+
                 p {
                     color: #202020;
                     font-size: 1.4rem;
@@ -67,12 +83,18 @@
 
                     @include mobile {
                         text-wrap: nowrap;
+                        line-height: 1rem;
+                        font-size: 1rem;
                     }
                 }
             }
 
             .arrow-icon {
                 width: 8rem;
+
+                @include mobile {
+                    width: convertToRem(80);
+                }
             }
 
             .active {
@@ -102,7 +124,7 @@
             height: 22.4rem;
             flex-shrink: 0;
 
-            @include mobile{
+            @include mobile {
                 width: 12rem;
                 height: 12rem;
                 margin-bottom: 2rem;
@@ -119,7 +141,8 @@
             font-weight: 600;
             margin-bottom: 1.6rem;
             line-height: 5.4rem;
-            @include mobile{
+
+            @include mobile {
                 font-size: 2rem;
                 line-height: 3rem;
             }
@@ -133,7 +156,7 @@
             font-weight: 500;
             line-height: 3.6rem;
 
-            @include mobile{
+            @include mobile {
                 font-size: 1.4rem;
                 margin-bottom: 2rem;
                 line-height: 1.5rem;
@@ -150,12 +173,12 @@
             border: 1px solid #F00;
             background: #F00;
 
-            @include mobile{
+            @include mobile {
                 width: 28rem;
             }
 
             p {
-                color:  #FFF;
+                color: #FFF;
                 text-align: center;
                 font-size: 1.6rem;
                 font-style: normal;

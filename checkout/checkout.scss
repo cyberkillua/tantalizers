@@ -16,7 +16,7 @@
             align-items: center;
 
             @include mobile {
-                padding: 2rem .8rem;
+                padding: 2.8rem 0;
             }
 
             .top {
@@ -30,12 +30,22 @@
                 border: 1px solid #E9E9E9;
                 background: #FFF;
 
+                @include mobile {
+                    overflow-x: scroll;
+                    width: 23rem;
+                    gap: .3rem;
+                }
+
                 h3 {
                     color: #202020;
                     font-size: 1.8rem;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 2.4rem;
+
+                    @include mobile {
+                        font-size: 1.2rem;
+                    }
                 }
             }
 
@@ -45,8 +55,10 @@
                 align-items: center;
 
                 @include mobile {
-                    overflow-x: scroll;
+                    padding: 1rem;
                     width: 100%;
+                    gap: .5rem;
+                    overflow-x: scroll;
                 }
 
                 .step {
@@ -57,6 +69,10 @@
                     border: 1px solid #E2E2E2;
                     background: #FFF;
 
+                    @include mobile {
+                        padding: .5rem 1rem;
+                        width: 20rem;
+                    }
 
                     p {
                         color: #202020;
@@ -67,6 +83,8 @@
 
                         @include mobile {
                             text-wrap: nowrap;
+                            line-height: 1rem;
+                            font-size: 1rem;
                         }
                     }
                 }
@@ -75,7 +93,7 @@
                     width: 8rem;
 
                     @include mobile {
-                        // display: none;
+                        width: convertToRem(80);
                     }
                 }
 
